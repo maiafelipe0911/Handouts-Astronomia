@@ -2,22 +2,68 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Astronomia Olímpica - Handouts</title>
+  <meta name="description" content="Materiais de Astronomia para estudo e preparação.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handouts de Astronomia Olímpica</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Bem-vindo à Astronomia Olímpica!</h1>
+    <h1>Handouts de Astronomia Olímpica</h1>
+    <p>Materiais para estudo e preparação</p>
   </header>
-  
-  <section>
-    <p>Aqui você encontrará materiais e handouts sobre Astronomia Olímpica.</p>
-    <!-- Você pode adicionar links para PDFs, apresentações, etc. -->
-  </section>
-  
+
+  <main>
+    <section aria-labelledby="materiais-heading">
+      <h2 id="materiais-heading">📂 Materiais Disponíveis</h2>
+      <ul id="file-list">
+        <!-- Os links dos arquivos serão adicionados aqui via JavaScript -->
+      </ul>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Felipe Maia</p>
+    <p>&copy; 2025 Felipe Maia - Astronomia Olímpica</p>
   </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // Lista de arquivos disponíveis
+      const files = [
+        {
+          name: "Introdução à Astronomia",
+          link: "https://github.com/maiafelipe0911/Handouts-Astronomia/raw/main/introducao_astronomia.pdf"
+        },
+        {
+          name: "Física do Universo",
+          link: "https://github.com/maiafelipe0911/Handouts-Astronomia/raw/main/fisica_universo.pdf"
+        },
+        {
+          name: "Sistemas Planetários",
+          link: "https://github.com/maiafelipe0911/Handouts-Astronomia/raw/main/sistemas_planetarios.pdf"
+        }
+      ];
+
+      const listElement = document.getElementById("file-list");
+      const fragment = document.createDocumentFragment();
+
+      files.forEach(file => {
+        const listItem = document.createElement("li");
+
+        const link = document.createElement("a");
+        link.href = file.link;
+        link.textContent = file.name;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+
+        listItem.appendChild(link);
+        fragment.appendChild(listItem);
+      });
+
+      listElement.appendChild(fragment);
+    })();
+  </script>
 </body>
 </html>
