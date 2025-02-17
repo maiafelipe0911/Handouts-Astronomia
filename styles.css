@@ -39,9 +39,8 @@ a:hover {
 /* ------------------------------ */
 .container {
   max-width: 1000px;
-  /* Cria espaçamento em cima e embaixo da página */
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 1rem 3rem; /* Espaço lateral para afastar o conteúdo das bordas */
 }
 
 /* ------------------------------ */
@@ -49,15 +48,15 @@ a:hover {
 /* ------------------------------ */
 .navbar {
   width: 100%;
-  background-color: #2b2b2b; /* Barra ligeiramente mais clara que o fundo */
+  background-color: #2b2b2b;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 1rem;
-  position: sticky;   /* Fica “grudada” no topo ao rolar a página */
+  position: sticky;
   top: 0;
-  z-index: 999;       /* Mantém a navbar acima de outros elementos */
-  margin-bottom: 1rem;/* Pequeno espaço após a navbar */
+  z-index: 999;
+  margin-bottom: 1rem;
 }
 
 .nav-left, .nav-right {
@@ -72,7 +71,6 @@ a:hover {
   color: #f0f0f0;
 }
 
-/* Links de navegação na direita */
 .nav-right a {
   color: #f0f0f0;
   padding: 0.4rem 0.6rem;
@@ -84,9 +82,8 @@ a:hover {
 }
 
 /* ------------------------------ */
-/*           HERO / BIO           */
+/*           HERO / INTRO         */
 /* ------------------------------ */
-/* Se quiser uma seção inicial de destaque */
 .hero {
   background: #262626; 
   padding: 3rem 1rem;
@@ -100,7 +97,7 @@ a:hover {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  border: 2px solid #458aff; /* Borda para destacar a foto */
+  border: 2px solid #458aff;
 }
 
 .hero h1 {
@@ -113,6 +110,32 @@ a:hover {
   color: #cccccc;
   max-width: 700px;
   margin: 0.5rem auto 0 auto;
+}
+
+/* ------------------------------ */
+/*           BIO / SOBRE MIM      */
+/* ------------------------------ */
+.bio {
+  background-color: #2b2b2b;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.bio h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-left: 4px solid #458aff;
+  padding-left: 0.5rem;
+}
+
+.bio p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #d9d9d9;
+  line-height: 1.5;
 }
 
 /* ------------------------------ */
@@ -178,8 +201,6 @@ footer p {
 /* ------------------------------ */
 /*   ESTILOS OPCIONAIS EXTRAS     */
 /* ------------------------------ */
-
-/* Para botões (se desejar usar) */
 .btn {
   display: inline-block;
   background-color: #458aff;
@@ -195,7 +216,6 @@ footer p {
   background-color: #7ba8ff;
 }
 
-/* Caso queira destacar citações ou caixas de destaque */
 .highlight {
   background-color: #333333;
   padding: 1rem;
