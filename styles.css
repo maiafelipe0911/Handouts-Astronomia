@@ -1,120 +1,202 @@
-/* Reset básico para consistência entre navegadores */
+/* ------------------------------ */
+/*            RESET               */
+/* ------------------------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* ------------------------------ */
+/*        CONFIGURAÇÕES GERAIS    */
+/* ------------------------------ */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  background: #0f0f0f; /* Tom escuro */
-  color: #f2f2f2;
+  background-color: #1e1e1e; /* Fundo escuro */
+  color: #f0f0f0;            /* Texto claro */
   line-height: 1.6;
-  margin: 0;
 }
 
-/* Cabeçalho */
-header {
-  background: linear-gradient(135deg, #131862 0%, #000 100%);
-  /* Gradiente que remete a algo "espacial" */
-  padding: 2rem 1rem;
-  text-align: center;
-  position: relative;
-}
-
-header h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  color: #dcdcdc;
-  font-size: 1rem;
-}
-
-/* Container principal */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-/* Seções */
-section {
-  margin-bottom: 2rem;
-}
-
-/* Títulos */
-h2 {
-  font-size: 1.8rem;
-  color: #ffd700; /* Dourado para destacar */
-  margin-bottom: 1rem;
-}
-
-/* Texto genérico (para o "Lorem ipsum" ou biografia) */
-p {
-  margin-bottom: 1rem;
-  line-height: 1.5;
-}
-
-/* Listas de arquivos */
-ul {
-  list-style: none; /* remove bullets */
-  margin-top: 1rem;
-}
-
-li {
-  margin-bottom: 0.8rem;
-}
-
-/* Links de arquivos */
+/* ------------------------------ */
+/*           LINKS                */
+/* ------------------------------ */
 a {
-  color: #ffd700;
+  color: #458aff; /* Cor de destaque para links */
   text-decoration: none;
-  border-bottom: 1px dotted #ffd700;
-  transition: all 0.2s ease-in-out;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  border-bottom: 1px solid #ffd700;
-  color: #fff; /* cor levemente diferente ao passar o mouse */
+  color: #7ba8ff; /* Tom mais claro ao passar o mouse */
 }
 
-/* Rodapé */
-footer {
-  background: #131862; /* tom roxo-azulado */
-  text-align: center;
+/* ------------------------------ */
+/*       CONTAINERS & LAYOUT      */
+/* ------------------------------ */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 1rem;
 }
 
-footer p {
-  color: #fff;
-  font-size: 0.9rem;
+/* ------------------------------ */
+/*          NAVBAR (TOPO)         */
+/* ------------------------------ */
+.navbar {
+  width: 100%;
+  background-color: #2b2b2b; /* Barra ligeiramente mais clara que o fundo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  position: sticky;   /* Fica “grudada” no topo ao rolar a página */
+  top: 0;
+  z-index: 999;       /* Mantém a navbar acima de outros elementos */
 }
 
-/* Se quiser dar um destaque extra à área de apresentação/biografia */
-.bio {
-  background: rgba(255, 255, 255, 0.05); /* um fundo levemente mais claro */
-  padding: 1.5rem;
-  border-radius: 8px;
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-left .brand {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+/* Links de navegação na direita */
+.nav-right a {
+  color: #f0f0f0;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+}
+
+.nav-right a:hover {
+  background-color: #3a3a3a;
+}
+
+/* ------------------------------ */
+/*           HERO / BIO           */
+/* ------------------------------ */
+/* Se quiser uma seção inicial de destaque */
+.hero {
+  background: #262626; 
+  padding: 3rem 1rem;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
-/* Caso queira estilizar algum botão no futuro */
+.hero .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #458aff; /* Borda para destacar a foto */
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  max-width: 700px;
+  margin: 0.5rem auto 0 auto;
+}
+
+/* ------------------------------ */
+/*          SESSÕES GERAIS        */
+/* ------------------------------ */
+.section {
+  margin: 2rem 0;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-left: 4px solid #458aff;
+  padding-left: 0.5rem;
+}
+
+.section p {
+  margin-bottom: 1rem;
+  color: #d9d9d9;
+}
+
+/* ------------------------------ */
+/*          LISTAS / CARDS        */
+/* ------------------------------ */
+ul {
+  list-style: none;
+}
+
+.card {
+  background-color: #2b2b2b;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #f0f0f0;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+/* ------------------------------ */
+/*            RODAPÉ              */
+/* ------------------------------ */
+footer {
+  background-color: #2b2b2b;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  font-size: 0.85rem;
+  color: #cccccc;
+}
+
+/* ------------------------------ */
+/*   ESTILOS OPCIONAIS EXTRAS     */
+/* ------------------------------ */
+
+/* Para botões (se desejar usar) */
 .btn {
   display: inline-block;
-  background: #ffd700;
-  color: #000;
-  padding: 0.6rem 1.2rem;
+  background-color: #458aff;
+  color: #fff;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
+  transition: background 0.2s ease;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.2s ease;
 }
 
 .btn:hover {
-  background: #ffe34c;
+  background-color: #7ba8ff;
+}
+
+/* Caso queira destacar citações ou caixas de destaque */
+.highlight {
+  background-color: #333333;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
 }
