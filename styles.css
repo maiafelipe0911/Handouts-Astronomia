@@ -1,19 +1,120 @@
+/* Reset básico para consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
-    color: #333;
-  }
-  
-  header, footer {
-    background: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  section {
-    padding: 2em;
-  }
-  
+  font-family: "Open Sans", Arial, sans-serif;
+  background: #0f0f0f; /* Tom escuro */
+  color: #f2f2f2;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(135deg, #131862 0%, #000 100%);
+  /* Gradiente que remete a algo "espacial" */
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #dcdcdc;
+  font-size: 1rem;
+}
+
+/* Container principal */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Seções */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Títulos */
+h2 {
+  font-size: 1.8rem;
+  color: #ffd700; /* Dourado para destacar */
+  margin-bottom: 1rem;
+}
+
+/* Texto genérico (para o "Lorem ipsum" ou biografia) */
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Listas de arquivos */
+ul {
+  list-style: none; /* remove bullets */
+  margin-top: 1rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}
+
+/* Links de arquivos */
+a {
+  color: #ffd700;
+  text-decoration: none;
+  border-bottom: 1px dotted #ffd700;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 1px solid #ffd700;
+  color: #fff; /* cor levemente diferente ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+  background: #131862; /* tom roxo-azulado */
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Se quiser dar um destaque extra à área de apresentação/biografia */
+.bio {
+  background: rgba(255, 255, 255, 0.05); /* um fundo levemente mais claro */
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Caso queira estilizar algum botão no futuro */
+.btn {
+  display: inline-block;
+  background: #ffd700;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #ffe34c;
+}
