@@ -1,68 +1,79 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import colors
 
-# Black hole parameters (geometric units: G = c = 1)
+# =============================================================================
+# Physical Parameters (Geometric Units: G = c = 1)
+# =============================================================================
 M = 1.0      # Mass
-a = 0.9      # Spin parameter (a = J/M)
+a = 0.8      # Spin (a = J/M)
 Q = 0.3      # Charge
 
-# Outer horizon radius
-r_plus = M + np.sqrt(M**2 - a**2 - Q**2)
+# Check black hole condition
+if M**2 < Q**2 + a**2:
+    raise ValueError("M² must be ≥ Q² + a² to avoid a naked singularity.")
 
-# Create polar grid in Boyer-Lindquist coordinates
-theta = np.linspace(0, 2*np.pi, 100)      # Azimuthal angle [0, 2π]
-r = np.linspace(r_plus + 0.1, 5*M, 50)    # Radial distance [r_plus, 5M]
-R, Theta = np.meshgrid(r, theta)           # Grid in (r, θ)
+# =============================================================================
+# Spacetime Geometry
+# =============================================================================
+r_plus = M + np.sqrt(M**2 - a**2 - Q**2)  # Event horizon
 
-# Convert to Cartesian coordinates for plotting
-X = R * np.cos(Theta)
-Y = R * np.sin(Theta)
+# Create uniform Cartesian grid
+x = np.linspace(-5*M, 5*M, 150)
+y = np.linspace(-5*M, 5*M, 150)
+X, Y = np.meshgrid(x, y)
 
-# Compute Σ = r² + a² cos²θ
+# Convert to polar coordinates (r, θ)
+R = np.sqrt(X**2 + Y**2)
+Theta = np.arctan2(Y, X)
+
+# =============================================================================
+# Magnetic Field Calculation (ZAMO Frame)
+# =============================================================================
+valid_mask = (R >= r_plus)  # Valid region (excludes inside the horizon)
 Sigma = R**2 + (a**2) * (np.cos(Theta)**2)
 
-# Calculate magnetic field components B_hat{r} and B_hat{θ} (ZAMO frame)
-B_r = (Q * a * np.cos(Theta) / Sigma**2) * (R**2 - a**2 * np.cos(Theta)**2)
-B_theta = (Q * a * R * np.sin(Theta) / Sigma**2) * (R**2 - a**2 * np.cos(Theta)**2)
+B_r = np.zeros_like(R)
+B_theta = np.zeros_like(R)
+B_r[valid_mask] = (Q * a * np.cos(Theta[valid_mask]) / Sigma[valid_mask]**2) * (R[valid_mask]**2 - a**2 * np.cos(Theta[valid_mask])**2)
+B_theta[valid_mask] = (Q * a * R[valid_mask] * np.sin(Theta[valid_mask]) / Sigma[valid_mask]**2) * (R[valid_mask]**2 - a**2 * np.cos(Theta[valid_mask])**2)
 
-# Convert to Cartesian components (Bx, By)
 Bx = B_r * np.cos(Theta) - B_theta * np.sin(Theta)
 By = B_r * np.sin(Theta) + B_theta * np.cos(Theta)
 
-# Normalize vectors for visualization
-norm = np.sqrt(Bx**2 + By**2)
-Bx_normalized = Bx / norm
-By_normalized = By / norm
+B_magnitude = np.sqrt(Bx**2 + By**2)
+B_magnitude[B_magnitude == 0] = 1e-10  # Avoid NaN
 
-# Plotting
-plt.figure(figsize=(10, 8))
+# =============================================================================
+# Visualization
+# =============================================================================
+plt.figure(figsize=(12, 10))
 
-# Magnetic field lines (quiver plot)
-plt.quiver(X, Y, Bx_normalized, By_normalized, norm, 
-           cmap='viridis', scale=30, width=0.005, 
-           clim=(0, np.max(norm)), 
-           label='Magnetic Field')
+# Streamlines
+strm = plt.streamplot(X, Y, Bx, By, color=np.log10(B_magnitude), 
+                     cmap='plasma', linewidth=1.5, density=2.5, 
+                     arrowstyle='->', arrowsize=1.5,
+                     norm=colors.Normalize(vmin=-3, vmax=np.log10(np.max(B_magnitude))))
 
-# Event horizon (r = r_plus)
-theta_horizon = np.linspace(0, 2*np.pi, 100)
-x_horizon = r_plus * np.cos(theta_horizon)
-y_horizon = r_plus * np.sin(theta_horizon)
-plt.plot(x_horizon, y_horizon, 'r--', linewidth=2, label='Event Horizon')
+# Event horizon and ergosphere
+theta = np.linspace(0, 2*np.pi, 300)
+x_horizon = r_plus * np.cos(theta)
+y_horizon = r_plus * np.sin(theta)
+r_ergo = M + np.sqrt(M**2 - (a**2) * (np.cos(theta)**2) - Q**2)
+x_ergo = r_ergo * np.cos(theta)
+y_ergo = r_ergo * np.sin(theta)
 
-# Ergosphere boundary (r = M + sqrt{M² - a² cos²θ - Q²})
-r_ergo = M + np.sqrt(M**2 - (a**2) * (np.cos(theta_horizon)**2) - Q**2)
-x_ergo = r_ergo * np.cos(theta_horizon)
-y_ergo = r_ergo * np.sin(theta_horizon)
-plt.plot(x_ergo, y_ergo, 'b--', linewidth=2, label='Ergosphere')
+plt.plot(x_horizon, y_horizon, 'r--', lw=2.5, label='Event Horizon')
+plt.plot(x_ergo, y_ergo, 'b--', lw=2.5, label='Ergosphere')
 
-# Formatting
-plt.title(f'Magnetic Field Structure: Kerr-Newman Black Hole ($a={a}$, $Q={Q}$)', fontsize=14)
+# Final adjustments
+plt.title(f'Magnetic Field Topology: Kerr-Newman ($a={a}$, $Q={Q}$)', fontsize=14)
 plt.xlabel('$x$ (M)', fontsize=12)
 plt.ylabel('$y$ (M)', fontsize=12)
-plt.colorbar(label='Field Strength (arb. units)')
-plt.legend(loc='upper right')
+cbar = plt.colorbar(strm.lines, label='log$_{10}$(Field Magnitude)')
+cbar.set_ticks(np.linspace(-3, np.log10(np.max(B_magnitude)), 5))
+plt.legend(loc='upper right', framealpha=0.9)
+plt.grid(alpha=0.15, linestyle='--')
 plt.axis('equal')
-plt.xlim(-5, 5)
-plt.ylim(-5, 5)
-plt.grid(alpha=0.2)
+plt.tight_layout()
 plt.show()
