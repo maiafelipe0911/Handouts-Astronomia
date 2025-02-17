@@ -39,7 +39,8 @@ a:hover {
 /* ------------------------------ */
 .container {
   max-width: 1000px;
-  margin: 0 auto;
+  /* Cria espaçamento em cima e embaixo da página */
+  margin: 2rem auto;
   padding: 1rem;
 }
 
@@ -56,6 +57,7 @@ a:hover {
   position: sticky;   /* Fica “grudada” no topo ao rolar a página */
   top: 0;
   z-index: 999;       /* Mantém a navbar acima de outros elementos */
+  margin-bottom: 1rem;/* Pequeno espaço após a navbar */
 }
 
 .nav-left, .nav-right {
