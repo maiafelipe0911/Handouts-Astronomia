@@ -13,69 +13,17 @@
     <p>Materiais para estudo e preparação</p>
   </header>
 
-  <main>
-    <section aria-labelledby="materiais-heading">
-      <h2 id="materiais-heading">📂 Materiais Disponíveis</h2>
-      <ul id="file-list">
-        <!-- Os links dos arquivos serão adicionados aqui via JavaScript -->
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Felipe Maia - Astronomia Olímpica</p>
-  </footer>
-
-  <script>
-    (function() {
-      'use strict';
-
-      // Lista de arquivos disponíveis
-      const files = [
-        {
-          name: "Introdução à Astronomia",
-          link: "https://github.com/maiafelipe0911/Handouts-Astronomia/raw/main/introducao_astronomia.pdf"
-        },
-        {
-          name: "Física do Universo",
-          link: "https://github.com/maiafelipe0911/Handouts-Astronomia/raw/main/fisica_universo.pdf"
-        },
-        {
-          name: "Sistemas Planetários",
-          link: "https://github.com/maiafelipe0911/Handouts-Astronomia/raw/main/sistemas_planetarios.pdf"
-        }
-      ];
-
-      const listElement = document.getElementById("file-list");
-      const fragment = document.createDocumentFragment();
-
-      files.forEach(file => {
-        const listItem = document.createElement("li");
-
-        const link = document.createElement("a");
-        link.href = file.link;
-        link.textContent = file.name;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-
-        listItem.appendChild(link);
-        fragment.appendChild(listItem);
-      });
-
-      listElement.appendChild(fragment);
-    })();
-  </script>
-
-<section>
-  <h2>📂 Materiais Disponíveis</h2>
-  <ul>
-      <li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/solucao.pdf" target="_blank">
-              📄 Ver PDF com Questões e Resoluções
-          </a>
-      </li>
-  </ul>
-</section>
+  <section>
+    <h2>📂 Materiais Disponíveis</h2>
+    <ul>
+        <li>
+            <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/solucao.pdf" target="_blank">
+                📄 Ver PDF com Questões e Resoluções
+            </a>
+        </li>
+    </ul>
+  </section>
+  
 
 </body>
 </html>
