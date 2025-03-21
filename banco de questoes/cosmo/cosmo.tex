@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+
+\usepackage{maiacustom}
+
+\begin{document}
+
+\psettitle{Banco de questões de astronomia}
+
+Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de preparar os estudantes para o processo seletivo de astronomia no Brasil. Algumas questões não são de autoria própria e estão devidamente sinalizadas por () antes do enunciado. O template do banco de questões é o mesmo do Professor \text{Kevin Zhou}. Seu trabalho é valioso, e diversas ideias desta lista podem ser encontradas em seus Handouts.
+
+% \begin{psidea}{Título da Ideia}{}
+% Ideia
+% \end{psidea}
+
+% \begin{psexample}{Título do Exemplo}{}
+% Exemplo
+% \end{psexample}
+
+% \begin{pssolution*}{}{}
+% Solução
+% \end{pssolution*}
+
+% \begin{psremark*}{Título da Observação}{}
+% Observação
+% \end{psremark*} 
+\section{Cosmologia}
+
+\pts{5}
+\begin{pproblem}
+    A Equação de Friedmann é uma das mais importantes para o estudo da cosmologia e do estudo sobre o universo. O objetivo do problema é deduzir as equações fundamentais da cosmologia. Primeiro, vamos com algumas definições:
+    \begin{enumerate}[label=\roman*)]
+        \item Devido à expansão do Universo, a distância entre dois pontos é dada por:
+        \[r(t) = r_0 a(t)\]
+        Onde \(a(t)\) é conhecido como o fator de escala e \(r_0\) é a distância medida em \(t = 0\). 
+        
+        \item O Universo segue a métrica de Robertson-Walker, a qual pode ser simplificada para:
+        \[-c^2 dt^2 + dr^2 = 0\]
+        \begin{alternativas}
+            \item Encontre uma expressão para a distância comóvel, \(r_0\), na forma de integral, a partir das definições dadas anteriormente.
+            \\
+            \item A Primeira Equação de Friedmann tem forma:
+            \[H(t)^2 \equiv \left(\frac{\dot{a}}{a}\right)^2 = k_1 \varepsilon(t) + \frac{C}{r_0^2 a^2}\]
+            Encontre os valores das constantes \(k_1\) para um universo esférico, em função de constantes fundamentais. Na equação acima, \(\varepsilon(t)\) é a densidade de energia do universo, \(C\) é uma constante relacionada à sua energia e \(a\) é o fator de escala.
+
+            \textbf{Dica:} Você pode obter essa equação tanto por conservação de energia ou utilizando a segunda lei de Newton.
+
+            \item Repita o item anterior para um universo cilíndrico se expandindo radialmente. A equação encontrada deve ter forma: 
+
+            \[\left(\frac{\dot{a}}{a}\right)^2 = f(a) \varepsilon(t) + \frac{C'}{r_0^2 a^2}\]
+
+            Encontre a função \(f(a)\).
+
+            \item Voltando agora para um "universo normal". Em cosmologia, definimos a densidade crítica de energia como sendo a densidade de energia de um universo em que \(C = 0\). Encontre uma expressão para a densidade crítica.
+            \item Reescreva a primeira equação de Friedmann em função de:
+            \[\Omega(t) = \frac{\varepsilon(t)}{\varepsilon_c(t)}\]
+            Onde \(\varepsilon_c(t)\) é a densidade crítica de energia.
+        \end{alternativas}
+    \end{enumerate}
+\end{pproblem}
+
+\pts{3}
+\begin{pproblem}(Adaptado NAO 2019) 
+    Considere um universo plano em que a constante gravitacional deixa de ser constante e passa a ser definida por
+    \[G(a) = G_0 f(a)\]
+    Onde \(f(a)\) é uma função do fator de escala.
+    \begin{alternativas}
+        \item Como seria a Equação de Friedmann nesse universo? Assuma que o universo é plano, \(C = 0\) e que ele é composto apenas por matéria bariônica ("clara"). Deixe sua resposta em função de \(H_0\), \(f(a)\), \(a\) e \(\Omega_{m,0}\), onde \(H_0\) é o valor da constante de Hubble no tempo atual, e \(\Omega_{m,0}\) é o parâmetro de densidade,
+        
+        No caso em que \(f(a) = e^{b(a-1)}\), onde \(b=2\).
+        
+        \item Estime a idade desse universo assumindo que ele é constituído apenas de matéria bariônica (matéria "clara").
+                
+        \item Qual o comportamento da idade quando \(t \rightarrow \infty\)?
+    \end{alternativas}
+
+    Talvez você ache as seguintes relações úteis:
+    \begin{paracol}{2}
+        \[\int_0^\infty x^2 e^{-x^2} = \frac{\sqrt{\pi}}{4}\]
+
+        \switchcolumn
+
+        \[\int_0^1 x^2 e^{-x^2} \approx 0,189\]
+    \end{paracol}
+\end{pproblem}
+
+\pts{5}
+\begin{pproblem}(Lista 8 - 2021)
+    A equação de Friedmann é dada por:
+    \begin{equation}
+        H^2 = \left( \frac{\dot{a}}{a} \right)^2 = \frac{8\pi G \varepsilon}{3c^2} - \frac{k c^2}{a^2},
+    \end{equation}
+
+    em que \(a\) é o fator de escala no tempo \(t\), \(\varepsilon\) é a densidade de energia no tempo \(t\) e \(k\) é o parâmetro que caracteriza a geometria do universo, podendo assumir qualquer valor real. Considerando um universo composto apenas por matéria bariônica não relativística e resolvendo essa equação diferencial não linear para \(k > 0\), obtêm-se as seguintes soluções em termos do parâmetro \(\theta \in [0, 2\pi]\):
+
+    \begin{align}
+        a(\theta) &= \frac{4\pi G \varepsilon_0}{3k c^4} \left( 1 - \cos\theta \right), \\
+        t(\theta) &= \frac{4\pi G \varepsilon_0}{3k^{3/2}c^5} \left( \theta - \sin\theta \right).
+    \end{align}
+
+    Considere um universo com \(\Omega_0 = 4\) e \(H_0 = 67,4 \ \text{km/s/Mpc}\).
+
+    \begin{alternativas}
+        \item A partir da equação de Friedmann, mostre que \(k c^2 = H^2 \left( 1 - \Omega \right) a^2\). Por fim, reescreva as equações paramétricas de \(a\) e \(t\) em termos do parâmetro de densidade atual \(\Omega_0\) e da constante de Hubble atual \(H_0\), além do parâmetro \(\theta\). Não substitua os seus respectivos valores numéricos.
+        
+        \item Encontre a idade \(t_0\) do universo em questão em termos de \(H_0\) e em seguida em bilhões de anos.
+        
+        \item O chamado \textit{Lookback time}, \(\Delta t_L\), representa quanto tempo no passado o universo estava com certo fator de escala \(a\). Qual é \(\Delta t_L\) em bilhões de anos para quando o tamanho do universo era \(1/3\) do que é atualmente?
+        
+        \item Determine \(\theta_n\) e em seguida \(t_n\) para os quais \(H = 0\).
+    \end{alternativas}
+\end{pproblem}
+\end{document}

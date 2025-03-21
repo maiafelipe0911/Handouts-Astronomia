@@ -1,0 +1,204 @@
+\documentclass[11pt]{article}
+
+\usepackage{maiacustom}
+
+\begin{document}
+
+\psettitle{Banco de questões de astronomia}
+
+Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de preparar os estudantes para o processo seletivo de astronomia no Brasil. Algumas questões não são de autoria própria e estão devidamente sinalizadas por () antes do enunciado. O template do banco de questões é o mesmo do Professor \text{Kevin Zhou}. Seu trabalho é valioso, e diversas ideias desta lista podem ser encontradas em seus Handouts.
+
+% \begin{psidea}{Título da Ideia}{}
+% Ideia
+% \end{psidea}
+
+% \begin{psexample}{Título do Exemplo}{}
+% Exemplo
+% \end{psexample}
+
+% \begin{pssolution*}{}{}
+% Solução
+% \end{pssolution*}
+
+% \begin{psremark*}{Título da Observação}{}
+% Observação
+% \end{psremark*} 
+\section{Termodinâmica}
+\pts{3}
+\begin{pproblem}
+    Uma galáxia possuí na ordem de \(10^{10}\) estrelas, por essa quantidade imensa, podemos modelar uma galáxia como sendo uma núvem de gás ideial, onde cada estrela seria equivamente a uma partícula do Gás. 
+    
+    O objetivo dessa questão é utilizar esse modelo teórico para estudar algumas propriedades de galáxias. Para isso, vamos fazer as seguintes suposições:
+
+    \begin{enumerate}[label=\roman*)]
+        \item A galáxia é esférica e se encontra em equilíbrio hidrostático.
+        \item A densidade de massa da galáxia é constante e tem valor \(\rho\).
+        \item As massas das estrelas são pequenas o suficiente para que as interações interestelares possam ser desconsideradas.
+    \end{enumerate}
+    
+    \begin{alternativas}
+        \item Considerando um sistema de gás ideal, encontre uma expressão para a pressão em função da densidade \(\rho\), da temperatura, \(T\), da massa de cada partícula \(\mu\) e constantes físicas.
+        
+        \item No nosso modelo teórico, não faz sentido pensar em temperatura, então precisamos encontar um substituto para ela. Utilizando o teorema da equipartição de energia, encontre uma expressão para \(T(r)\) e \(P(r)\).
+    \end{alternativas}
+
+\end{pproblem}
+
+\pts{2}
+\begin{pproblem}
+    Nessa questão, vamos fazer um estudo sobre o coeficiente adiabático de estrelas. Considere uma o exterior de uma estrela se dá por vácuo a temperatura \(T=0\).
+    \begin{alternativas}
+        \item Todas as estrelas são corpos em equilíbrio hidrostático. Sabendo disso, qual a pressão na superfície de uma estrela de massa \(M\) e raio \(R\).
+        \item Considere agora, que a estrela se expanda em \(\delta R\), como a pressão variaria? Se necessário utilize que \((1+x)^n\approx 1+nx\).
+        \item Agora, conclua qual o valor de \(\gamma\) mínimo, \(\gamma_{min}\) a estrela deve ter para se manter gravitacionalmente ligada (assuma que ela se expande de maneira adiabática)?
+    \end{alternativas}
+
+
+\end{pproblem}
+
+\pts{4}
+\begin{pproblem}
+    Há vários modelos para a atmosfera do nosso planeta, vamos explorá-los e encontrar os efeitos físicos de cada um.
+    \begin{alternativas}
+        \item Primeiramente, vamos considerar o modelo isotérmico (\(T=\) cte). Considerando que cada partícula de ar possuí massa \(\mu\), a atmosfera possuí \(P(0) = P_0\), encontre uma fórmula para a pressão em função da altura, \(P(h)\).
+        \item Um modelo mais real da atmosfera é na verdade, adiabática, uma vez que o ar é um péssimo condutor de calor. Considerando que o ar possuí coeficiente de Poisson \(\gamma\), encontre uma fórma para \(P(h)\), no modelo adiabático. Considere que a nivel do mar, a pressão e a temperatura valem \(P(0)\) e \(T(0)\).
+        \item Encontre uma expressão para \(dT/dh\) para o modelo anterior e estime seu valor. O resultado é condizente com a realidade?
+    \end{alternativas}
+
+
+\end{pproblem}
+
+\pts{5}
+\begin{pproblem}
+    Um dos corpos mais fascinantes do universo são Buracos Negros. Nessa questão, vamos estudar um pouco da Termodinâmica relacionada a esses tipos de objeto. Para essa questao utilizaremos unidades naturais, i.e.: \(c = G = \hbar = k_B = 1\). Nessa convenção, a massa do buraco negro é descrita pela equação:
+
+    \[dM = \frac{\kappa}{8\pi}dA + \Omega dL + \Phi dQ\]
+
+    Aqui, os valores se restringem ao horizonte de eventos, ou seja, \(\kappa\) é a aceleração da gravidade no horizonte de eventos, \(A\), sua área, \(\Omega\) a velocidade angular do buraco negro, \(L\) seu momento de inercia, \(\Phi\) o potencial eletríco e \(Q\) a sua carga.
+
+    \begin{center}
+    \textbf{Parte 1: Termodinâmica Básica}   
+    \end{center}
+    
+    \begin{alternativas}
+        \item Um dos conceitos fundamentais da termodinâmica é o conceito de entropia, utilizando seus conhecimentos sobre a mesma, explique bravimente a desigualdade:
+        \[\oint dS \geq 0\]
+
+        \item Dos 3 fatores que regem a massa de um buraco negro(\(dA, \ dL, \ dQ\)), apenas \(dA\) segue a mesma de sigulade da entropia, por que isso se verifica sempre verdade?
+        
+        Para os próximos itens, considere um buraco negro sem spin e sem carga.
+
+        \item Bekenstein e Hawking conseguiram provar a chamada \textit{Entropia Bekenstein-Hawking} que relaciona a entropia com a área do Buraco Negro (lembre-se que estamos utilziando unidades naturais, por isso, algumas dimensões podem não fazer sentido). Bekenstein e Hawking descobriram que para um buraco negro \(S \equiv \frac{A}{4}\). A equação que nós temos então é:
+        
+        \[dM = \frac{\kappa}{2\pi}d\left(\frac{A}{4}\right)\]
+
+        Fazendo uma analogia a \(dM\) com alguma função de estado, encontre a temperatura do buraco negro em função de \(\kappa\).
+
+        Ainda há um termo importante faltando na fórmula anterior, a Pressão relacioanda a densidade de energia escura, \(\Lambda\).
+
+        \item A pressão devido a energia escura é dada por:
+        \[P = -\frac{\Lambda}{8\pi}\]
+
+        Onde \(\Lambda\) é constante. Isso nos mostra que \(VdP\) é nulo, ou seja, pode ser adicionado livrimente a expressão anterior. Com isso podemos concluir que a massa do buraco negro, na verdade se relaciona com outro potencial termodinâmico, qual é ele? 
+
+        \item Note que o volume, \(V=V\) e a entropia, \(S = A/4\) não são mais independentes em buracos negros. Assumindo que o horizonde de eventos do buraco negro é uma esfera, encontre uma relação entre \(S\) e \(V\). Isso é mais uma prova que a energia intera, \(U = U(S, V)\) não é o melhor potencial termodinâmico para trabalharmos.
+    \end{alternativas}
+
+    \centering
+    \textbf{Parte 2: Ciclo de Carnot Para Buracos Negros}
+    
+    \begin{alternativas}
+        \item O objetivo dessa parte da questão é construir um modelo teórico para um ciclo de Carnot dentro de buracos negros. Mas primerio prove um resultado importante, para buracos negros, adiabaticos e isocóricos devem ser equivalentes para buracos negros.
+        
+        \item Calcule a capacidade termica a pressão constante de um Buraco negro. Seu resultado deve ser algo bizarro.
+        
+        \item Use o fato de que \(Q = T \Delta S\) ao longo das isotermas, juntamente com os resultados dos resultados anteriores partes, para calcular a eficiência de uma máquina de Carnot de buraco negro e confirmar que você
+        obtenha a eficiência de Carnot. Maravilhe-se com o quão mais rápido esse cálculo é do que o
+        derivação típica da eficiência de Carnot, e observe que você também inadvertidamente
+        também calculou a eficiência do ciclo Stirling.
+
+        Caso voce se interesse pelo assunto, há um artigo interessante que fala especificamente sobre o tema de ciclos em buracos negros e pode ser encontrado \href{https://arxiv.org/pdf/1404.5982}{aqui}.
+    \end{alternativas}
+
+    \centering
+    \textbf{Parte 3: Tempo de Vida e Evaporação de Buracos Negros}
+    
+    \begin{alternativas}
+        \item Como calculado na parte 1, buracos negros possuem uma temperatura. Em decorrencia a isso, eles emitem radiação, como descrita na Lei de Stefan-Boltzmann. Sabendo disso, ache uma relação entre o tempo de vida de um buraco negro e a sua massa \(M\).
+    \end{alternativas}
+
+    
+
+
+\end{pproblem}
+
+\pts{3}
+\begin{pproblem}
+    Considere que um foguete utiliza como combustível um gás ideal diatômico. Seu mecanismo de funcionamento é bem simples: O gás parte de uma camera a temperatura \(T_1\), que possuí área de secção transversal \(A_1\), o gás entao, flui adiabaticamente e é expelido em uma abertura de área \(A_2\), com pressão, \(P_2\) e temperatura \(T_2<T_1\). Considerando que o fluxo é contínuo, determine o empuxo sentido pelo foguete.
+
+
+\end{pproblem}
+
+
+\pts{5} 
+\begin{pproblem} (Adaptado Iran Problem Set)
+    Este problema visa calcular o ponto de ebulição de líquidos. 
+
+As partículas de um líquido movem-se com diferentes velocidades dependendo da temperatura, e algumas dessas partículas podem escapar das forças intermoleculares e da gravidade terrestre (que será negligenciada neste problema), deixando a superfície do líquido. Essas partículas transferem seu momento, criando pressão ao colidirem com o ambiente ao redor. Essa pressão é conhecida como pressão de vapor do líquido. O ponto de ebulição é a temperatura na qual a pressão de vapor iguala-se à pressão atmosférica ao redor do líquido.
+
+\begin{alternativas}
+\item Usando a distribuição de Maxwell-Boltzmann, encontre uma relação para a velocidade quadrática média $v_{\text{rms}}$.
+
+A distribuição de Maxwell-Boltzmann é:
+\begin{equation}
+    n(v) \, dv = n \left(\frac{m}{2\pi k_B T}\right)^{3/2} e^{-\frac{mv^2}{2k_BT}} \, 4\pi v^2 dv
+\end{equation}
+
+A velocidade quadrática média é dada por:
+\begin{equation}
+    v_{\text{rms}}^2 = \frac{1}{N} \sum_{i=1}^N v_i^2 = \frac{1}{n} \int_0^\infty v^2 n(v) dv
+\end{equation}
+
+\item Suponha que a velocidade da partícula estudada seja igual a $v_{\text{rms}}$. Além disso, suponha que a atmosfera terrestre seja composta por 80\% de nitrogênio e 20\% de oxigênio, e que o líquido estudado seja água.
+
+Calcule a distância que a partícula escapada percorre na atmosfera antes de colidir, conhecida como comprimento médio livre. Expresse essa distância em termos da densidade numérica da atmosfera e da seção transversal geométrica das partículas.
+
+\item Calcule a taxa de variação do momento de uma partícula escapando. Divida a variação do momento pelo intervalo de tempo do processo. Suponha que as partículas do líquido perdem todo o seu momento ao colidirem com moléculas de ar.
+
+O tempo médio para a próxima colisão é o comprimento médio livre dividido pela velocidade da partícula.
+
+Sabendo que, nesse intervalo de tempo, um momento igual ao momento da partícula do líquido foi transferido para a molécula de ar, use a segunda lei de Newton para calcular a força exercida pela partícula do líquido sobre a molécula de ar. 
+
+\item A pressão é a força exercida sobre uma superfície. Encontre uma expressão para a pressão de vapor de um líquido. Você pode deixar a sua responsa em função das seções transversais da água e do ar, \(S_w\) e \(S_a\) reespectivamente.
+
+\item Usando a relação de equilíbrio hidrostático e assumindo aceleração gravitacional constante, densidade do ar constante e pressão nula nas camadas superiores da atmosfera, encontre uma relação para a pressão próxima à superfície da Terra. Expresse essa relação em termos da densidade do ar, aceleração gravitacional e espessura da atmosfera. 
+
+\item Adicione a condição necessária para a ebulição, igualando a pressão atmosférica próxima à superfície da Terra (obtida acima) à pressão de vapor. Simplifique o resultado até obter:
+\begin{equation}
+    T = \frac{mhg S_w}{3k_B S_a}
+\end{equation}
+
+Onde $m$ é o peso médio das moléculas de ar, $g$ é a aceleração gravitacional, $h$ é a espessura da atmosfera, e os outros parâmetros foram descritos nas partes anteriores. 
+
+\item Determine o peso médio das moléculas de ar para a composição mencionada no início do problema. 
+
+\item Use o conceito do raio de Bohr para estimar a razão entre as seções transversais. Suponha um elétron em órbita circular ao redor de um próton, onde a força dominante é a força de Coulomb. Usando a suposição de Niels Bohr $L = n\hbar$, encontre a distância do elétron ao núcleo em termos de constantes físicas, $n$ e o número atômico $Z$. 
+
+\item Calcule a seção transversal dos átomos de ar e de líquido. Assuma que cada molécula de líquido é composta por dois átomos de hidrogênio e um de oxigênio, e que as partículas de ar consistem em dois átomos de oxigênio e dois de nitrogênio. Encontre a razão entre as seções transversais $S_i/S_a$. 
+
+\item Considere $g = 9,8 \, \text{m/s}^2$ e a altura da atmosfera como $100 \, \text{km}$. Determine o ponto de ebulição da água. 
+
+\end{alternativas}
+
+\end{pproblem}
+
+\pts{3}
+\begin{pproblem} (Adaptado Iran Problem Set)
+    Dr. Shahram Abbassi é um dos cientistas iranianos mais reconhecidos no campo dos discos de acreção. Em uma de suas pesquisas recentes sobre a gigantesca nuvem molecular B32, ele descobriu uma estrela semelhante ao Sol no centro dessa nuvem específica. Segundo suas pesquisas, essa nuvem possui uma massa de $10^6 M_\odot$, um raio de $30 \, \text{pc}$ e uma viscosidade muito alta, tão grande que, se a nuvem entrasse em colapso, todo o sistema colapsaria com simetria esférica.
+
+    O mais importante é calcular o calor específico a volume constante ($C_v$) para essa nuvem. Com base nos dados fornecidos e utilizando aproximações razoáveis, determine um limite para $C_v$ de modo que a acreção seja possível. Esses valores variam dependendo da massa e do raio da núvem? O que podemos concluir com o resultado?
+
+\end{pproblem}
+
+
+\end{document}

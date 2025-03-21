@@ -1,0 +1,115 @@
+\ProvidesPackage{maiacustom}
+
+%pacotes gerais
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{enumitem}
+\usepackage{amsmath} %coisas de matematica e \boxed
+\usepackage{romannum} %numeros romanos
+\usepackage{hyperref} %links 
+\usepackage{mdframed} %caixas de solução
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{tikz, siunitx, pbox} %Graficos e tabelas%
+\usepackage{circuitikz} %circuitos%
+\usepackage{comment} %esconder
+\usepackage[brazilian]{babel} %deixa em português%
+\usepackage{paracol} %colunas
+\usepackage{float} %define o [H] para imagens 
+
+% color boxes
+\usepackage[many]{tcolorbox}
+\tcbuselibrary{theorems}
+\newtcbtheorem{psexample}{Example}{colback=green!10,colframe=green!40!black,fonttitle=\bfseries,breakable,enhanced}{ex}
+\newtcbtheorem{psidea}{Ideia}{colback=blue!10,colframe=blue!40!black,fonttitle=\bfseries,breakable,enhanced}{id}
+\newtcbtheorem{psremark}{Remark}{colback=purple!10,colframe=purple!40!black,fonttitle=\bfseries,breakable,enhanced}{rm}
+\newtcbtheorem{pssolution}{Solução}{colback=orange!10,colframe=orange!40!black,fonttitle=\bfseries,breakable,enhanced}{sn}
+\tcbset{noparskip/.style={before={\par\pagebreak[0]\medskip\parindent=0pt},
+after={\par\medskip}}}
+
+% code for totaling up points
+\usepackage{totcount}
+\newtotcounter{tpts}
+\newtotcounter{cpts}
+\newtotcounter{endpts}
+\newcommand{\clearpts}{\addtocounter{tpts}{\value{cpts}} \setcounter{cpts}{0}}
+\newcommand{\pts}[1]{\clearpts \setcounter{cpts}{#1}}
+\newcommand{\totpts}{\setcounter{endpts}{\totvalue{tpts} + \totvalue{cpts}}\arabic{endpts}}
+
+% formatting for problems and solutions
+\definecolor{ptred}{rgb}{0.7,0.1,0.1}
+\newcommand{\ptfmt}[1]{\textbf{\color{ptred}#1\color{black}}}
+\definecolor{advblue}{rgb}{0.1,0.1,0.7}
+\newcommand{\advanced}{\!\textbf{\color{advblue}[A]\color{black}}\ }
+
+\makeatletter
+\newtheoremstyle{mystyle}
+{\topsep}               % space above
+{\topsep}               % space below
+{}                      % bodyfont
+{}                      % indent
+{\bfseries}             % headfont
+{}                      % punctuation
+{0.6em}                 % space after head
+{\llap{[\ptfmt{\arabic{cpts}}]\hspace{.6em}}\thmname{#1}\thmnumber{ #2}\thmnote{\normalfont{ (#3)}}{\bfseries .}}  %theoremheadspec
+\theoremstyle{mystyle}
+\newtheorem{pproblem}{Problema}
+\makeatother
+
+% clocks for time limits
+\usepackage{clock} 
+\ClockFrametrue\ClockStyle=1
+
+% headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{{Felipe Maia}}
+\chead{}
+\rhead{Banco de Questões}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headheight}{14pt}
+
+\newcommand{\psettitle}[1]{
+    \begin{center}
+    \huge \textbf{#1}
+    \end{center}
+}
+
+\linespread{1.03} % give a little extra room
+\setlength{\parindent}{0.2in} % reduce paragraph indent a bit
+
+%comandos úteis:
+
+\newmdenv[
+  linecolor=blue,
+  linewidth=2pt,
+  roundcorner=5pt,
+  backgroundcolor=blue!5,
+  skipabove=10pt,
+  skipbelow=10pt,
+  innertopmargin=10pt,
+  innerbottommargin=10pt,
+  innerrightmargin=10pt,
+  innerleftmargin=10pt,
+]{solucao}
+
+
+\newenvironment{alternativas} %listas em negrito e a), b), c)...
+  {\begin{enumerate}[label=\textbf{\alph*)}]}
+  {\end{enumerate}}
+
+%comandos novos,
+\newcommand{\ssol}{\textbf{Solução:}}
+
+\newcommand{\lagrangean}{\mathcal{L}}
+
+\newcommand{\Epsilon}{\scalebox{1.65}{$\epsilon$}}
+
+\newcommand{\grad}{\nabla}
+
+\newcommand{\divergence}{\nabla \cdot}
+
+\newcommand{\rot}{\nabla \times}

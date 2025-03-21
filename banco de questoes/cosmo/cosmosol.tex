@@ -1,0 +1,316 @@
+\documentclass[11pt]{article}
+
+\usepackage{maiacustom}
+
+\begin{document}
+
+\psettitle{Banco de questões de astronomia}
+
+Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de preparar os estudantes para o processo seletivo de astronomia no Brasil. Algumas questões não são de autoria própria e estão devidamente sinalizadas por () antes do enunciado. O template do banco de questões é o mesmo do Professor \text{Kevin Zhou}. Seu trabalho é valioso, e diversas ideias desta lista podem ser encontradas em seus Handouts.
+
+% \begin{psidea}{Título da Ideia}{}
+% Ideia
+% \end{psidea}
+
+% \begin{psexample}{Título do Exemplo}{}
+% Exemplo
+% \end{psexample}
+
+% \begin{pssolution*}{}{}
+% Solução
+% \end{pssolution*}
+
+% \begin{psremark*}{Título da Observação}{}
+% Observação
+% \end{psremark*} 
+\section{Cosmologia}
+
+\pts{5}
+\begin{pproblem}
+    A Equação de Friedmann é uma das mais importantes para o estudo da cosmologia e do estudo sobre o universo. O objetivo do problema é deduzir as equações fundamentais da cosmologia. Primeiro, vamos com algumas definições:
+    \begin{enumerate}[label=\roman*)]
+        \item Devido à expansão do Universo, a distância entre dois pontos é dada por:
+        \[r(t) = r_0 a(t)\]
+        Onde \(a(t)\) é conhecido como o fator de escala e \(r_0\) é a distância medida em \(t = 0\). 
+        
+        \item O Universo segue a métrica de Robertson-Walker, a qual pode ser simplificada para:
+        \[-c^2 dt^2 + dr^2 = 0\]
+        \begin{alternativas}
+            \item Encontre uma expressão para a distância comóvel, \(r_0\), na forma de integral, a partir das definições dadas anteriormente.
+            \\
+            \item A Primeira Equação de Friedmann tem forma:
+            \[H(t)^2 \equiv \left(\frac{\dot{a}}{a}\right)^2 = k_1 \varepsilon(t) + \frac{C}{r_0^2 a^2}\]
+            Encontre os valores das constantes \(k_1\) para um universo esférico, em função de constantes fundamentais. Na equação acima, \(\varepsilon(t)\) é a densidade de energia do universo, \(C\) é uma constante relacionada à sua energia e \(a\) é o fator de escala.
+
+            \textbf{Dica:} Você pode obter essa equação tanto por conservação de energia ou utilizando a segunda lei de Newton.
+
+            \item Repita o item anterior para um universo cilíndrico se expandindo radialmente. A equação encontrada deve ter forma: 
+
+            \[\left(\frac{\dot{a}}{a}\right)^2 = f(a) \varepsilon(t) + \frac{C'}{r_0^2 a^2}\]
+
+            Encontre a função \(f(a)\).
+
+            \item Voltando agora para um "universo normal". Em cosmologia, definimos a densidade crítica de energia como sendo a densidade de energia de um universo em que \(C = 0\). Encontre uma expressão para a densidade crítica.
+            \item Reescreva a primeira equação de Friedmann em função de:
+            \[\Omega(t) = \frac{\varepsilon(t)}{\varepsilon_c(t)}\]
+            Onde \(\varepsilon_c(t)\) é a densidade crítica de energia.
+        \end{alternativas}
+    \end{enumerate}
+\begin{pssolution*}{}{ }
+    \begin{alternativas}
+        \item Isolando \(d_r\), 
+        \[d_r = c dt\]
+
+        Mas, por definição, \(r(t) = r_0 a(t) \rightarrow d_r = r_0 da\). Substituindo, 
+
+        \[dr_0 = c\frac{dt}{a(t)}\]
+
+        Integrando dos dois lados, 
+
+        \[r_0 = c\int \frac{dt}{a(t)}\]
+
+        \item \textbf{Método 1: Conservação de energia}
+        Considere uma partícula de massa \(m\) localizada em um ponto do universo. A sua energia em relação ao centro do universo é dada por:
+
+        \[E = \frac{mv^2}{2} - \frac{GM(r)m}{r}\]
+
+        Onde \(v = \dot{r} = r_0 \dot{a}\) e \(M(r) = \frac{4}{3} \pi r^3 \rho(t)\). Dividindo a equação por \(m/2\) e aplicando as substituições, temos:
+
+        \[\frac{2E}{m} = r_0^2 \dot{a}^2 - \frac{G}{r_0 a} \frac{8\pi (r_0 a)^3 \rho(t)}{3}\]
+
+        Simplificando, 
+
+        \[\frac{2E}{m} = r_0^2 \dot{a}^2 - \frac{8\pi G r_0^2 a^2 \rho(t)}{3}\]
+
+        Multiplicando ambos os lados por \(\frac{1}{r_0^2 a^2}\), obtemos:
+
+        \[\frac{2E}{mr_0^2 a^2} = \left(\frac{\dot{a}}{a}\right)^2 - \frac{8\pi G \rho(t)}{3}\]
+
+        Reorganizando a equação e utilizando a equivalência massa-energia, \(m = E/c^2 \rightarrow \rho(t) = \varepsilon(t)/c^2\), temos:
+
+        \[\left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3 c^2} \varepsilon(t) + \frac{2E}{mr_0^2 a^2}\]
+
+        Da onde podemos concluir que,
+
+        \[\boxed{k_1 = \frac{8\pi G}{3 c^2}}\]
+
+
+        \textbf{Método 2: Segunda Lei de Newton}
+
+        Escrevendo a segunda lei de Newton para um corpo com relação ao centro do universo,
+
+        \[-\frac{GM(r)m}{r^2} = m \frac{d^2r}{dt^2}\]
+
+        Note que, ao se expandir, o universo não cria massa, então a massa contida em uma camada \(r\) será constante ao longo do tempo, usando dessa propriedade, temos que:
+
+        \[\frac{d^2r}{dt^2} = -\frac{GM(r)}{r^2}\]
+
+        Multiplicando ambos os lados por \(dr/dt\),
+
+        \[\frac{dr}{dt} \frac{d^2r}{dt^2} = -\frac{GM(r)}{r^2} \frac{dr}{dt}\]
+
+        Reescrevendo,
+
+        \[\dot{r} \frac{d\dot{r}}{dt} = -\frac{GM(r)}{r^2} \frac{dr}{dt}\]
+
+        Multiplicando ambos os lados por \(dt\),
+
+        \[\dot{r} d\dot{r} = -GM(r) \frac{dr}{r^2}\]
+
+        Substituindo \(r = r_0 a\),
+
+        \[r_0^2 \dot{a} d\dot{a} = -\frac{GM(r)}{r_0} \frac{da}{a^2}\]
+
+        Integrando dos dois lados,
+
+        \[r_0^2 \int \dot{a} da = -\frac{GM(r)}{r_0^2} \int \frac{da}{a^2}\]
+
+        \[\frac{r_0^2 \dot{a}^2}{2} = \frac{GM(r)}{r_0 a} + A\]
+
+        Onde \(A\) é uma constante de integração. Substituindo \(M(r)\),
+
+        \[\frac{r_0^2 \dot{a}^2}{2} = \frac{4\pi G r_0^2 a^2}{3c^2} \varepsilon(t) + A\]
+
+        Multiplicando a expressão por \(2/a^2 r_0^2\), temos:
+
+        \[\left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3c^2} \varepsilon(t) + \frac{2A}{r_0^2 a^2}\]
+
+        De onde podemos concluir, igualmente, que:
+
+        \[\boxed{k_1 = \frac{8\pi G}{3c^2}}\]
+
+        \item Utilizando a lei de Gauss,
+
+        \[\oint \mathbf{g} \cdot d\mathbf{S} = -4\pi G M(r)\]
+
+        Onde,
+
+        \[\oint \mathbf{g} \cdot d\mathbf{S} = -g(2\pi r L)\]
+
+        Para uma simetria cilíndrica. Substituindo na equação,
+
+        \[g = \frac{2G M(r)}{r L}\]
+
+        Utilizando o método da conservação de energia, temos primeiramente que calcular a energia potencial,
+
+        \[U = -\int F dr = -\int \frac{2GM(r)m}{rL} dr = -\int \frac{2GM(r)m}{L} \frac{da}{a} - \frac{2GM(r)m}{L} \ln(a)\]
+
+        Por conservação de energia,
+
+        \[E = \frac{m r_0^2 \dot{a}^2}{2} - \frac{2GM(r)m}{L} \ln(a)\]
+
+        Substituindo \(M(r) = \pi r_0^2 a^2 L \varepsilon(t)/c^2\),
+
+        \[E = \frac{m r_0^2 \dot{a}^2}{2} - \frac{2\pi r_0^2 a^2 G m \ln(a)}{c^2} \varepsilon(t)\]
+
+        Reorganizando,
+
+        \[\left(\frac{\dot{a}}{a}\right)^2 = \frac{4\pi G \ln(a)}{c^2} \varepsilon(t) + \frac{2E}{mr_0^2 a^2}\]
+
+        Da onde podemos obter,
+
+        \[\boxed{f(a) = \frac{4\pi G}{c^2} \ln(a)}\]
+
+        \item A equação de Friedmann para \(C = 0\) se reduz a
+
+        \[H(t)^2 = \frac{8\pi G}{3c^2} \varepsilon_c(t)\]
+
+        Isolando \(\varepsilon_c(t)\),
+
+        \[\boxed{\varepsilon_c(t) = \frac{3c^2}{8\pi G} H^2(t)}\]
+
+        Pela definição,
+
+        \[\varepsilon(t) = \Omega (t) \varepsilon_c(t)\]
+
+        Substituindo na equação,
+
+        \[H^2(t) = \frac{8\pi G}{3c^2} \Omega(t) \varepsilon_c(t) + \frac{C}{r_0^2 a^2}\]
+
+        Substituindo \(\varepsilon_c(t)\),
+
+        \[H^2(t) = H^2(t) \Omega(t) + \frac{C}{r_0^2 a^2}\]
+
+        Resolvendo para \(H^2(t)\),
+
+        \[\boxed{H^2(t) = \frac{C}{r_0^2 a^2 (1 - \Omega(t))}}\]
+    \end{alternativas}
+\end{pssolution*}
+\end{pproblem}
+
+
+\pts{3}
+\begin{pproblem}(Adaptado NAO 2019) 
+    Considere um universo plano em que a constante gravitacional deixa de ser constante e passa a ser definida por
+    \[G(a) = G_0 f(a)\]
+    Onde \(f(a)\) é uma função do fator de escala.
+    \begin{alternativas}
+        \item Como seria a Equação de Friedmann nesse universo? Assuma que o universo é plano, \(C = 0\) e que ele é composto apenas por matéria bariônica ("clara"). Deixe sua resposta em função de \(H_0\), \(f(a)\), \(a\) e \(\Omega_{m,0}\), onde \(H_0\) é o valor da constante de Hubble no tempo atual, e \(\Omega_{m,0}\) é o parâmetro de densidade,
+        
+        No caso em que \(f(a) = e^{b(a-1)}\), onde \(b=2\).
+        
+        \item Estime a idade desse universo assumindo que ele é constituído apenas de matéria bariônica (matéria "clara").
+                
+        \item Qual o comportamento da idade quando \(t \rightarrow \infty\)?
+    \end{alternativas}
+
+    Talvez você ache as seguintes relações úteis:
+    \begin{paracol}{2}
+        \[\int_0^\infty x^2 e^{-x^2} = \frac{\sqrt{\pi}}{4}\]
+
+        \switchcolumn
+
+        \[\int_0^1 x^2 e^{-x^2} \approx 0,189\]
+    \end{paracol}
+
+\begin{pssolution*}{}{ }
+    \begin{alternativas}
+        \item Para um universo plano e contendo apenas matéria, a equação de Friedmann tem a forma:
+        \[H(t)^2 = H_0^2 \Omega_m\]
+
+        Onde \(\Omega_m = \frac{\rho_m(t)}{\rho_{c, 0}}\) e 
+
+        \[\rho_c = \frac{3 H_0^2}{8\pi G}\]
+
+        Para matéria bariônica,
+
+        \[\rho_m(t) = \rho_0 a(t)^{-3}\]
+
+        Então,
+
+        \[\Omega_m = \Omega_{m,0} f(a) a^{-3}\]
+
+        Para um universo composto apenas de matéria bariônica, temos \(\Omega_{m,0} = 1\). Assim, a equação de Friedmann fica:
+
+        \[\boxed{H(a)^2 = H_0^2 \Omega_{m,0} f(a) a^{-3} \equiv H_0^2 f(a) a^{-3}}\]
+
+        \item Usando que \(H = \frac{\dot{a}}{a}\), temos:
+
+        \[t = \int dt = \int da \frac{dt}{da} = \int \frac{da}{\dot{a}}\]
+
+        Multiplicando por \(a/a\),
+
+        \[t = \int \frac{a}{\dot{a}a} da = \int \frac{da}{H(a) a}\]
+
+        Substituindo o valor de \(H(a)\) encontrado no item anterior,
+
+        \[t = \frac{1}{H_0^2} \int \frac{da}{\sqrt{f(a) a^{-3}}} = \frac{1}{H_0^2} \int a^{3/2} e^{-b(a-1)/2} da = \frac{e^{b/2}}{H_0^2} \int a^{3/2} e^{-b a/2} da\]
+        
+        Usando uma substituição da forma \(x = \sqrt{ba/2}\), temos:
+
+        \[t = \frac{4\sqrt{2} e^{b/2}}{b^{3/2} H_0} \int x^2 e^{-x^2}\]
+
+        Os limites de integração vão de \(a=0\) (início do universo) até \(a=1\) (momento atual). Como fizemos a substituição em \(x\),
+
+        \[x = \sqrt{\frac{ab}{2}}\]
+
+        \[t = \frac{4\sqrt{2} e^{b/2}}{b^{3/2} H_0} \int_0^{\sqrt{b/2}} x^2 e^{-x^2}\]
+
+        Substituindo \(b=2\),
+
+        \[t = \frac{4\sqrt{2} e}{2^{3/2} H_0} \int_0^1 x^2 e^{-x^2}\]
+
+        Substituindo os valores e utilizando a integral fornecida, obtemos:
+
+        \[\boxed{t \approx 15 \text{ Gyr}}\]
+
+        O que é próximo do nosso universo!!
+
+        \item Mudando os limites da integral para um tempo infinito, \(a(t) \rightarrow \infty\),
+
+        \[\boxed{t_\infty = \frac{4\sqrt{2} e}{2^{3/2} H_0} \int_0^{\infty} x^2 e^{-x^2} = \frac{\sqrt{2\pi} e}{2^{3/2} H_0} \approx 34.1 \text{ Gyr}}\]
+
+    \end{alternativas}
+\end{pssolution*}
+\end{pproblem}
+
+
+
+\pts{5}
+\begin{pproblem}(Lista 8 - 2021)
+    A equação de Friedmann é dada por:
+    \begin{equation}
+        H^2 = \left( \frac{\dot{a}}{a} \right)^2 = \frac{8\pi G \varepsilon}{3c^2} - \frac{k c^2}{a^2},
+    \end{equation}
+
+    em que \(a\) é o fator de escala no tempo \(t\), \(\varepsilon\) é a densidade de energia no tempo \(t\) e \(k\) é o parâmetro que caracteriza a geometria do universo, podendo assumir qualquer valor real. Considerando um universo composto apenas por matéria bariônica não relativística e resolvendo essa equação diferencial não linear para \(k > 0\), obtêm-se as seguintes soluções em termos do parâmetro \(\theta \in [0, 2\pi]\):
+
+    \begin{align}
+        a(\theta) &= \frac{4\pi G \varepsilon_0}{3k c^4} \left( 1 - \cos\theta \right), \\
+        t(\theta) &= \frac{4\pi G \varepsilon_0}{3k^{3/2}c^5} \left( \theta - \sin\theta \right).
+    \end{align}
+
+    Considere um universo com \(\Omega_0 = 4\) e \(H_0 = 67,4 \ \text{km/s/Mpc}\).
+
+    \begin{alternativas}
+        \item A partir da equação de Friedmann, mostre que \(k c^2 = H^2 \left( 1 - \Omega \right) a^2\). Por fim, reescreva as equações paramétricas de \(a\) e \(t\) em termos do parâmetro de densidade atual \(\Omega_0\) e da constante de Hubble atual \(H_0\), além do parâmetro \(\theta\). Não substitua os seus respectivos valores numéricos.
+        
+        \item Encontre a idade \(t_0\) do universo em questão em termos de \(H_0\) e em seguida em bilhões de anos.
+        
+        \item O chamado \textit{Lookback time}, \(\Delta t_L\), representa quanto tempo no passado o universo estava com certo fator de escala \(a\). Qual é \(\Delta t_L\) em bilhões de anos para quando o tamanho do universo era \(1/3\) do que é atualmente?
+        
+        \item Determine \(\theta_n\) e em seguida \(t_n\) para os quais \(H = 0\).
+    \end{alternativas}
+\end{pproblem}
+
+\end{document}

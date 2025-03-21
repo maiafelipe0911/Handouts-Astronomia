@@ -1,0 +1,231 @@
+\documentclass[11pt]{article}
+
+\usepackage{maiacustom}
+
+\begin{document}
+
+\psettitle{Banco de questões de astronomia}
+
+Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de preparar os estudantes para o processo seletivo de astronomia no Brasil. Algumas questões não são de autoria própria e estão devidamente sinalizadas por () antes do enunciado. O template do banco de questões é o mesmo do Professor \text{Kevin Zhou}. Seu trabalho é valioso, e diversas ideias desta lista podem ser encontradas em seus Handouts.
+
+% \begin{psidea}{Título da Ideia}{}
+% Ideia
+% \end{psidea}
+
+% \begin{psexample}{Título do Exemplo}{}
+% Exemplo
+% \end{psexample}
+
+% \begin{pssolution*}{}{}
+% Solução
+% \end{pssolution*}
+
+% \begin{psremark*}{Título da Observação}{}
+% Observação
+% \end{psremark*} 
+\section{Fotometria e Física Moderna}
+
+\pts{3} 
+\begin{pproblem}
+    O objetivo dessa questão é deduzir uma expressão para a \textit{profundidade óptica}. Imagine que um feixe de luz passe por uma região do espaço, com uma determiada quantidade de partículas. Se \(I_0\) é a intensidade da luz antes de passar por tal região de espaço e \(I\) é a intensidade da luz após, a profundidade óptica é definida como:
+    \[I = I_0e^{-\tau}\]
+    Onde \(\tau\) é a profundidade óptica.
+    \\
+    Considere uma região do espaço possuí densidade numérica de partículas \(n\).
+    \begin{alternativas}
+        \item Qual o número de partículas em uma área \(A\) e espessura \(dz\)?
+        \item Supondo que cada partícula possua sessão transversal \(\sigma\), qual é a área tampada pelas parículas?
+        \item Encontre a fórmula para \(\tau\). 
+    \end{alternativas}
+
+\end{pproblem}
+
+\pts{2}
+\begin{pproblem} A Galáxia do Triângulo, \(M33\), é a terceira maior galáxia do grupo local, ela está a uma distância \(d=970 \text{ kpc}\) de nós e possuí magnitude aparente de \(5,72\). Sabendo que ela possuí aproximadamente \(40\) bilhões de estrelas, encontre a luminosidade média das estrelas de \(M33\). Sua estimativa parece condizer com a realidade? Por que?
+\end{pproblem}
+
+\pts{4}
+\begin{pproblem}
+    Considere que o universo possuí densidade numérica de estrelas, isto é, numero de estrelas por unidade de volume, constante e de valor \(n\). Assumindo que todas elas tenham \(L = L_\odot\) e que existam um total de \(N_0\) estrelas no universo.
+    
+    \begin{alternativas}
+    \item qual a probrabilidade da magnitude absoluta de uma estrela, vista do centro do universo, ter magnitude entre \(m\) e \(m+dm\), onde \(dm\) é uma porção infinitesimal de magnitude? Deixe sua resposta em termos de \(m\) e da maior magnitude possivél, \(m_{lim}\), de uma estrela na "borda" do universo.
+
+    \item Qual a probabilidade de uma estrela poder ser observada a olho nu?
+    
+    \textbf{Dados:} \[\int_{-\infty}^{6}10^{0,6(x-A)}dx \approx 2881.6 e^{-1.381 A}\]
+    \end{alternativas}
+\end{pproblem}
+
+\pts{4}
+\begin{pproblem}
+    O \textit{Brilho Superfícial}, fluxo por ângulo sólido por frequência, \(B_\nu\) é dada pela Lei de Plank:
+    \[B_\nu = \frac{dF}{d\nu d\Omega} = \frac{2h\nu^3}{c^2(e^{\frac{h\nu}{k_BT}}-1)}\] 
+    \begin{alternativas}
+        \item Encontre uma expressão para:
+        \[B_\lambda = \frac{dF}{d\lambda d\Omega}\]
+        \item A partir de \(B_\lambda\) encontre o comprimento de onda máximo de onda \(\lambda_{max}\) que uma estrela de temperatura \(T\) emite (você terá que resolver algo numéricamente).
+        \item Para pequenas frequências temos a aproximação de Righlight-Jeans. Obetenha uma expressão para \(B_\nu\) para frequêncais pequenas.
+        \end{alternativas}
+
+
+\end{pproblem}
+
+\pts{3}
+\begin{pproblem}
+    A luminosidade de um corpo secundário, depende da área iluminada vísivel do astro. Nestá questão vamos fazer um breve estudo sobre esse fenômeno.
+    \begin{alternativas}
+        \item  Considere a Seguinte situação:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\linewidth]{imagens/fotometria 1.png}
+            \caption{Esquema Sol-Terra-Lua}
+        \end{figure}
+
+        Encontre uma expressão para a razão \(\Phi\) entre a área iluminada em função de \(\alpha\) e a área total do planeta.
+        
+        \item Encontre os ângulos \(\alpha\) em que temos a fase da Lua em: Nova, crescente, cheia e minguante, respectivamente.
+    \end{alternativas}
+
+
+\end{pproblem}
+
+\pts{5}
+\begin{pproblem} (Apostila Magna)
+    Neste problema, modelaremos o efeito da atmosfera na Terra. Suponha que o Sol
+seja um corpo negro de temperatura \(T_1\) e raio \(R_1\). A Terra é uma esfera que está localizada
+a uma distância \(R\) do Sol e possui raio \(R_3\). A emissividade da Terra é \(\epsilon_3\).
+\begin{alternativas}
+    \item Se não houvesse atmosfera na Terra, determine sua temperatura de equilíbrio, \(T_3\).
+    \item  Agora, consideraremos os efeitos da atmosfera. Modele-a como uma casa esférica de gás,
+    com uma emissividade \(\epsilon_2\) e raio exterior \(R_2>R_3\), concêntrica à Terra. No equilíbrio térmico,
+    sua absortividade para os comprimentos de onda no ultravioleta e no infravermelho é \(\epsilon_2\). A
+    atmosfera transmite uma fração \(t\) da radiação ultravioleta mas é completamente opaca ao
+    infravermelho. Assumindo que o Sol emita luz ultravioleta enquanto a Terra emite e re-emite
+    no infravermelho, determine as temperaturas \(T_2\) da atmosfera e \(T_3\) da Terra, no equilíbrio
+    termodinâmico. Assuma que a atmosfera seja um condutor de calor perfeito, de forma que
+    toda a radiação incidente sobre ela seja uniformemente distribuída por sua superfície.
+\end{alternativas}
+
+
+\end{pproblem}
+
+
+\pts{2}
+\begin{pproblem}(Lista 2 - 2021)
+    A Nebulosa do Anel (M57) possui uma magnitude aparente igual a 9 e um
+diâmetro angular de 2$^{\prime}$ para um observador na Terra. Qual seria a magnitude aparente do céu
+noturno de um planeta orbitando uma estrela exatamente no centro de M57?
+
+\end{pproblem}
+
+
+\pts{4}
+\begin{pproblem} (Adaptado Lista 4 - 2021)
+    O Efeito Cherenkov foi primeiramente detectado pelo cientista soviético
+    Pavel Cherenkov, em 1937. Mais tarde, em conjunto com seus colegas de trabalho, I. E. Tamm e
+    I. M. Frank, ele interpretou fisicamente o fenômeno, ganhando, assim, o Prêmio Nobel de Física
+    de 1958. Antes de fazer um estudo matemático, precisamos, primeiro, entender um pouco mais
+    sobre seu princípio.
+
+    Quando partículas carregadas de alta energia percorrem um meio dielétrico, é possível que, caso
+    sua velocidade seja maior que a velocidade de fase ($\frac{c}{n}$), átomos sejam excitados. Esses, por sua
+    vez, ao retornarem ao estado fundamental, emitem radiação eletromagnética. As ondas emitidas
+    se espalham de forma esférica e, quando somadas, formam um cone de ângulo de abertura $2\alpha$,
+    como mostra a figura abaixo.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\linewidth]{imagens/cherenkov.png}  
+      \caption{Mecanismo de radiação do Efeito Cherenkov}
+    \end{figure}
+
+    Esse efeito é similar a um jato movendo-se em velocidade supersônica, ou seja, segue o mesmo
+    princípio do Cone de Mach, porém, com a luz. Finalmente, iremos desenvolver o modelo matemático do Efeito Cherenkov.
+
+    \begin{center}
+        \textbf{Parte A - Modelo Teórico}    
+    \end{center}
+    
+    Considere uma partícula movimentando-se a velocidades relativísticas em um meio de índice de
+    refração $n$. Sabe-se que sua massa de repouso é $m_0$, possui momento linear $p$ e velocidade $v$. Em
+    determinado momento, há emissão de um fóton sob um ângulo $\alpha$, como mostra a figura 1.
+
+    \begin{alternativas}
+        \item Sendo $\mu$ a frequência do fóton emitido, determine a equação de seu momento
+        linear, $p_\mu$, e sua energia, $E_\mu$. Sua resposta deve estar em função de $n$, $\mu$ e constantes físicas.
+        \item Encontre uma expressão para o momento linear da partícula após a emissão
+    do fóton em função de $p_\mu$, $p$ e $\alpha$.
+        \item Sendo $\beta_n = \frac{c}{vn}$, prove que a relação abaixo é verdadeira:
+        \begin{equation}
+            \cos\alpha = \frac{1}{\beta_n}
+        \end{equation}
+        \item Considerando que o momento linear e a energia se conservem, determine a
+        velocidade mínima para a ocorrência do Efeito Cherenkov.
+        \textbf{Dica:} Quando comparado com os outros parâmetros, o fator $(n^2-1)h\mu$ pode ser desprezado.
+
+    \begin{center}
+        \textbf{Parte B - Reações Nucleares}    
+    \end{center}
+    
+    A cadeia próton-próton é um processo de reações de fusão para conversão de hidrogênio em hélio.
+    Um dos ramos possíveis da cadeia próton-próton é a $pp \text{ IV}$, na qual, teoricamente, um átomo de
+    hélio-3 reage diretamente com um próton, conforme a reação a seguir:
+
+    \begin{equation}
+        ^3\text{He} + ^1\text{H} \rightarrow ^4\text{He} + \nu + \_\_
+    \end{equation}
+
+        \item  Indicando a lei de conservação nuclear utilizada, indique qual partícula faltante
+        no quadrado da reação acima.
+
+        \item  Indicando a lei de conservação nuclear utilizada, indique qual partícula faltante
+        no quadrado da reação abaixo:
+
+        \begin{equation}
+            \pi^- \rightarrow \mu^- + \_
+        \end{equation}
+        
+        \textbf{Dados:} Massa do píon: $140 \ \text{MeV}/c^2$, massa do múon: $106 \ \text{MeV}/c^2$.
+    \end{alternativas}
+
+
+\end{pproblem}
+
+
+\pts{3} 
+\begin{pproblem}(Lista 3 - Vinhedo 2022)
+Juvelino, diretamente de seu observatório em Paris, França, monitora a estrela Polaris ($\alpha\text{UMi}$). Ele tem como objetivo descobrir a temperatura de cor $T_c$ do astro. Alguns dos dados de que ele dispõe a respeito de seu alvo são:
+
+\begin{itemize}
+    \item Magnitude aparente na banda $V$: $V = 1,98$;
+    \item Magnitude absoluta na banda $V$: $M_V = -3,60$;
+    \item Magnitude absoluta na banda $B$: $M_B = -3,19$.
+\end{itemize}
+
+Com as informações fornecidas, ajude Juvelino!
+
+\begin{alternativas}
+    \item Realizando diversas observações, Juvelino determinou que a extinção interestelar na banda $V$ na direção de Polaris é $a_V = 5,8 \, \text{mag/kpc}$. Determine a distância, em pc, de $\alpha\text{UMi}$ até a Terra.
+    \item Usando a relação empírica
+    \begin{equation}
+        \frac{A_V}{E_{B-V}} = 3,0
+    \end{equation}
+    sendo $A_V$ a extinção interestelar total na banda $V$ e $E_{B-V}$ o excesso de cor $B-V$, determine o índice de cor $B-V$ da estrela observada.
+    \item Demonstre a relação
+    \begin{equation}
+        T_c = \frac{7009}{(B-V) + 0,47}
+    \end{equation}
+    na qual a temperatura de cor é dada em Kelvin. Para tanto, use o fato de que estrelas de classe espectral $A0$ possuem $(B-V) = 0$ e $T_c = 15000 \, \text{K}$. Use também que os comprimentos de onda das bandas $B$ e $V$ são, respectivamente, $\lambda_B = 440 \, \text{nm}$ e $\lambda_V = 548 \, \text{nm}$. Justifique quaisquer aproximações feitas.
+
+    \textbf{DICA: A lei de plack talvez seja útil}
+    \item Determine a temperatura de cor de Polaris.
+\end{alternativas}
+\end{pproblem}
+
+\pts{4}
+\begin{pproblem}
+    (Lista 4 - 2020) Apesar de assustadora, a plantação de bananeiras de Juvelino possui um céu perfeito para uma de suas duas paixões: astrofotografia. Ele possui um telescópio de 200 mm de diâmetro e uma super CCD acoplada, com os parâmetros: lado do pixel \(5\ \mu\text{m}\), escala de placa \(3,2\ \text{arcmin/mm}\), eficiência quântica de 97\%, RON (Read-out noise, ou ruído de leitura) 1 contagem/pixel e DN (ruído térmico) 1 contagem/(pixel.hora). Ele prefere fazer suas observações na banda \(V\) (comprimento de onda central \(\lambda_V = 5500\ \text{Å}\), largura de banda \(\Delta \lambda = 820\ \text{Å}\)), pois lembra-se de um número mágico associado a ela: o fluxo de fótons de um objeto de magnitude 0 nessa banda é \(\phi_0 = 1000\ \text{fótons/}(\AA\cdot \text{cm}^2)\). Juvelino possui 2 alvos prediletos: uma estrela de magnitude \(m_V = 4,51\) e um aglomerado globular de brilho superficial uniforme em \(V\) de \(19,5\ \text{mag/arcsec}^2\) e diâmetro angular \(\theta = 40''\).
+\end{pproblem}
+
+
+\end{document}

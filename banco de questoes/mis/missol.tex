@@ -1,0 +1,140 @@
+\documentclass[11pt]{article}
+
+\usepackage{maiacustom}
+
+\begin{document}
+
+\psettitle{Banco de questões de astronomia}
+
+Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de preparar os estudantes para o processo seletivo de astronomia no Brasil. Algumas questões não são de autoria própria e estão devidamente sinalizadas por () antes do enunciado. O template do banco de questões é o mesmo do Professor \text{Kevin Zhou}. Seu trabalho é valioso, e diversas ideias desta lista podem ser encontradas em seus Handouts.
+
+% \begin{psidea}{Título da Ideia}{}
+% Ideia
+% \end{psidea}
+
+% \begin{psexample}{Título do Exemplo}{}
+% Exemplo
+% \end{psexample}
+
+% \begin{pssolution*}{}{}
+% Solução
+% \end{pssolution*}
+
+% \begin{psremark*}{Título da Observação}{}
+% Observação
+% \end{psremark*} 
+\section{Miscelânia}
+\pts{4}
+\begin{pproblem} \clock{1}{0}
+    Dudu Leiteiro, estava observando o céu, no interior de sua fazenda no Mato Grosso do Sul e observou o sistema binário formado pelas estremas Iaum e Sezenem. Dudu, oberservou as estrelas e coletou os seguintes dados, com um intervalo de 6 meses entre eles:
+    \\
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline % Linha horizontal superior
+            Medida & Iaum & Sezenem   \\ 
+            \hline
+            Ascenção Reta \(1\) & \(4^h19^m53,91^s\) & \(4^h19^m53,078^s\) \\
+            Ascenção Reta \(2\) & \(4^h19^m53,92^s\) & \(4^h19^m53,077^s\) \\
+            Declinação \(1\) & -\(13^\circ \ 33' \ 45,28''\) & -\(13^\circ \ 33' \ 47,78''\) \\
+            Declinação \(2\) & -\(13^\circ \ 33' \ 45,20''\) & -\(13^\circ \ 33' \ 48,03''\) \\
+            \hline
+        \end{tabular} 
+\end{center}
+    Com esses dados, você e Dudu Leiteiro, juntos vão analizar propriedades desse sistema binário. O primeiro passo importante para isso, é encontrar as coordenadas do centro de massa do sistema, denotadas pelo subscrito \(_{CM}\). Você lembra que em uma das aulas sobre o estudo de binárias, seu professor, LuCav, te ensinsou que:
+    \[
+    \delta_{CM} = \delta_A + \Delta\delta_A
+    \]
+
+    \[
+    \alpha_{CM} = \alpha_A + \Delta\alpha_A
+    \]
+
+    Onde \(\delta_A\) e \(\alpha_A\) são as coordenadas de uma das estrelas do binário e \(\Delta\) representa a diferença de coordenadas entre a estrela e o centro de massa, temos a seguinte relação:
+
+    \[
+    \frac{a_A}{a} = \frac{\Delta\delta_A}{\Delta\delta_{CM}} = \frac{\Delta\alpha_A}{\Delta\alpha_{CM}}
+    \]
+
+    Onde \(a_A\) é a distância da estrela \(A\) até o \(CM\), \(a\) o semi-eixo maior da órbita e \(\Delta x_{CM}\) a variação das coordenadas do \(CM\). 
+    
+    \textbf{a)} Sabendo que Iaum possuí \(3/2\) da massa de Sezenem, calcule \(\Delta\delta_{CM}\) e \(\Delta\alpha_{CM}\).
+    
+    \textbf{b)} Com isso e considerando que as variação angulares são pequenas o suficiente para triângulos esféricos serem planos, encontre a paralaxe do sistema e sua distância até a Terra.
+
+    \textbf{c)} Considerando a massa de Iaum, \(M_I = 4,9 M_\odot\), e o período do sistema igual a \(P = 29,01\) anos, calcule o maior redshift advindo de Sezenem, sendo que ambas as órbitas são circulares e Sezenem possuí velocidade tangencial de \(\mu = 1509''/ano\).
+
+\end{pproblem}
+
+\pts{3}
+\begin{pproblem} Marisso estava cansado de não conseguir encontrar com precisão a posição de uma estrela em seu telescópio e decidiu investigar os efeitos que poderiam estar causando essse erro aparente. Após ler alguns artigos, ele descobriu \(2\) principais efeitos que fazem um objeto aparentar estar em um ângulo \(\Delta \theta_i\), desviado da sua posição original, são eles: \textit{Paralaxe} e \textit{Aberração Estelar}. Nessa questão, seu objetivo é ajudar Marrisso, a entender o porque desses efeitos acontecerem.
+    \begin{alternativas}
+        \item A paralaxe é o mais básico deles e ocorre por causa da mudança de posição da Terra ao longo do Ano. Considere que uma estrela está localizada de tal modo que a linha \(Sol-Estrela\) é perpendicular ao plano da órbota da Terra. Desenhe o esquema da situação e, considerando o raio da órbita da Terra como \(r\) e a distância da estrela como \(d\), obtenha uma fórmula para \(\Delta \theta_p\) causado pela paralaxa.
+        
+        \item Suponha agora, que a linha \(Sol-Estrela\) faça um ângulo \(\phi\) qualquer com a órbita da Terra. Como sua resposta muda?
+        
+        A aberração estar por sua vez advem de efeitos relativísticos a serem explorados a seguir.
+
+        \item Considere um referencial \(S'\) se movendo com velocidade \(v\hat{\mathbf{x}}\) em relação ao referencial \(S\). Como as coordenadas \((x', t')\) se relacionam com as coordendas \((x,t)\)? Deixe suas respostas em função de \(\gamma\).
+        
+        \item Supondo que haja um emissor de radiação no referencial \(S'\) e que o mesmo emita luz em um ângulo \(\alpha'\) em relção ao eixo \(x\) . No referencial \(S\) o dispositivo aparentará emitir luz em um ângulo \(\alpha\). Prove, utilizando as transformações de Lorentz, que a relação entre \(\alpha\) e \(\alpha'\) é dada por:
+        
+        \[\cos\alpha = \frac{\cos\alpha' + v/c}{1+(\cos\alpha') v/c}\]
+
+        \item Repita o item anterior, mas prove utilizando a adição de velocidade relativística.
+
+        \item Considerancdo que a linha \(Sol-Estrela\) é perpendicular ao plano da órbita da Terra, e que a Terra se move com velocidade \(v\), encontre uma expressão para o desvio \(\Delta\theta_A\) causado pela aberração estelar.
+    
+        \item Qual desses efeitos você acha que é mais significativo, a paralaxe ou a aberação estelar?
+    \end{alternativas}
+
+    \begin{pssolution*}{}{}
+        \begin{alternativas}
+            \item %preguica de pegar o geogebra
+            
+            \item %pregica geogebra
+                
+            \item As transformações de Lorentz (usando \(c=1\) ) são dadas por 
+            \[x = \gamma (x' + vt'), \ \ t = \gamma(t' + vx')\]
+
+            \item Note que no referencial \(S\), temos \(\cos \alpha = \frac{x}{t}\), No referencial \(S'\) temos 
+            
+            \[x' = t'\cos\alpha'\]
+
+            Usando as transformações de Lorentz, 
+
+            \[t = \gamma t'(1+v\cos\alpha') \]
+
+            \[x = \gamma t'(\cos\alpha'+ v)\]
+
+            Utilizando que \(\cos\alpha = x/t\), temos
+
+            \[\cos\alpha = \frac{\cos\alpha' + v}{1+ v\cos\alpha'}\]
+
+            "Voltando" os \(c\), temos
+
+            \[\boxed{\cos\alpha = \frac{\cos\alpha' + v/c}{1+(v/c)\cos\alpha'}}\]
+
+
+            \item No frame \(S'\), teremos que a velocidade em \(x'\) é dada por \(v_x' = c\cos\alpha'\). No referencial \(S\), temos
+            
+            \[v_x = "v_x'+v" = \frac{v_x'+v}{1+(v_x'v)/c^2}\]
+
+            Substituindo \(v_x'\) e utilizando que \(\cos\alpha = v_x/c\) temos
+
+            \[\boxed{\cos\alpha =\frac{\cos\alpha' + v/c}{1+(v/c)\cos\alpha'}} \]
+
+            \item No referencial da Terra, (que está se movendo e portanto corresponde ao referencial \(S'\)), temos \(\alpha' = \pi/2\). Plugando isso, na resposta obtemos
+            
+            \[\cos\alpha = v/c \rightarrow \sin\alpha = \sqrt{1-(v/c)^2} = \frac{1}{\gamma}\]
+
+            Utilziando a aproximação para pequenos ângulos, \(\boxed{\alpha \approx 1/\gamma}\).
+
+            \item Enquando a distância Sol terra, está na ordem de alguns minutos-luz, a menor distância entre a Terra e outra estrela, está na ordem de anos luz, ou seja \(\theta \sim 10^{-6}\). Já a velocidade da Terra é a aproximadamente \(30\) km/s, assim, \(v/c \sim 10^{-4}\). Logo os efeitos de aberração são mais evidentes que os de paralaxe.
+
+
+        \end{alternativas}
+
+        \end{pssolution*}
+
+\end{pproblem}
+\end{document}
