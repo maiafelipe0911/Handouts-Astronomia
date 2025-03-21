@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742342020.41707 "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/termo/termosol.tex" "termosol.pdf" "termosol" 1742342024.59888 0
+["pdflatex"] 1742526211.31529 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/termo/termosol.tex" "termosol.pdf" "termosol" 1742526214.59145 0
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -228,11 +228,11 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/termo/termosol.tex" 1742342018 35632 5fc0785d846efec8ee0905180c02b5e7 ""
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/termo/termosol.tex" 1742342018 35632 5fc0785d846efec8ee0905180c02b5e7 ""
   "imagens/secaotransversal.png" 1737751602 42730 3b4f035f0fc56fbb06216f053410aca5 ""
   "maiacustom.sty" 1741535033 3600 bd7add4f8ff292d1a1f9c50ae8ea1750 ""
-  "termosol.aux" 1742342024 933 6c8ece98a4539f66ec11eb13cb4f4bfd "pdflatex"
-  "termosol.out" 1742342024 111 7dff267e9c9cbae156d01038de63b4e1 "pdflatex"
+  "termosol.aux" 1742526214 933 6c8ece98a4539f66ec11eb13cb4f4bfd "pdflatex"
+  "termosol.out" 1742526214 111 7dff267e9c9cbae156d01038de63b4e1 "pdflatex"
   "termosol.tex" 1742342018 35632 5fc0785d846efec8ee0905180c02b5e7 ""
   (generated)
   "termosol.aux"

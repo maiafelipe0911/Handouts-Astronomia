@@ -1,6 +1,6 @@
-PWD c:\Users\femai\OneDrive\Área de Trabalho\Latex Geral\Astronomia\banco de questoes\Listas Por materia\termo
+PWD c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\termo
 INPUT C:\Users\femai\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\femai\OneDrive\Área de Trabalho\Latex Geral\Astronomia\banco de questoes\Listas Por materia\termo\termosol.tex
+INPUT c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\termo\termosol.tex
 OUTPUT termosol.log
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
