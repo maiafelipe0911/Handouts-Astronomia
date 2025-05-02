@@ -1207,6 +1207,48 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             Reorganizando os termos:
 
             \[\boxed{\mu \mathbf{e} = (v^2-\frac{\mu}{r})\mathbf{r} - (\mathbf{r}\cdot\mathbf{v})\mathbf{v}}\]
+
+            Logo, esse vetor aponta para o periastro.
+        \end{alternativas}
+        \begin{center}
+            \textbf{Parte II: Determinando elementos orbitais a partir do vetor excentricidade}     
+        \end{center}
+        \begin{alternativas}
+            \item O vetor $\mathbf{h}$ é definido por $\mathbf{h} = \mathbf{r}\times\mathbf{v}$. Por definição,
+            
+            $$\mathbf{h}=\mathbf{r}\times\mathbf{v} = 
+            \begin{vmatrix}
+                \hat{x} & \hat{y} & \hat{z} \\
+                r_x & r_y & r_z \\
+                v_x & v_y & v_z \\
+            \end{vmatrix}
+            = (r_yv_z - r_zv_y)\hat{x} + (r_zv_x-r_xv_z)\hat{y} + (r_xv_y-r_yv_z)\hat{z}   $$
+
+            De maneira similar, $\mathbf{n} = \mathbf{z}\times\mathbf{h}$
+            $$\mathbf{n} = 
+            \begin{vmatrix}
+                \hat{x} & \hat{y} & \hat{z} \\
+                0 & 0 & 1 \\
+                h_x & h_y & h_z \\
+            \end{vmatrix}
+             = -h_y\hat{x} + h_x\hat{y}$$
+
+             \item O desenho deve se parecer com a figura a seguir:
+             \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.7\linewidth]{imagens/elementosorbitais.png}
+                \caption{Fonte Wikipedia}
+            \end{figure}
+
+            \item Para nos orientar, vamos criar um sistema de coordenadas na qual o polo norte corresponde ao eixo $z$ e o eixo $x$ aponta na direção do ponto vernal. Começando com a inclinação, ela é o ângulo entre o polo norte e o plano perpendicular da órbita. Desse modo
+            $$\mathbf{z}\cdot\mathbf{h} = \cos i |z||h|\rightarrow i = \cos^{-1}\left(\frac{\mathbf{z}\cdot\mathbf{h}}{|z||h|}\right) $$
+
+            Usando argumentos semelhantes, podemos obter, 
+
+            $$\Omega = \cos^{-1}\left(\frac{\mathbf{x}\cdot\mathbf{n}}{|x||n|}\right)$$
+            $$\omega = \cos^{-1}\left(\frac{\mathbf{n}\cdot\mathbf{e}}{|n||e|}\right)$$
+            $$\theta = \cos^{-1}\left(\frac{\mathbf{e}\cdot\mathbf{r}}{|e||r|}\right)$$
+            
         \end{alternativas}
     \end{pssolution*}
 \end{pproblem}

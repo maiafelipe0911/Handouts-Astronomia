@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742525041.6815 "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/mecceleste/meccelestesol.tex" "meccelestesol.pdf" "meccelestesol" 1742525048.65977 0
+["pdflatex"] 1746159233.19356 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/mecceleste/meccelestesol.tex" "meccelestesol.pdf" "meccelestesol" 1746159237.51946 0
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1730851663 12668 2ed3ebfe78a8b8a0dace041e7e76ac2e ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
@@ -235,8 +235,9 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/mecceleste/meccelestesol.tex" 1742525033 93186 a343288a587dacd48d85c115a6fda1cc ""
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/mecceleste/meccelestesol.tex" 1746159230 95281 e18619ebb34b987e3189825d3fb45144 ""
   "imagens/anelE.png" 1735104104 59438 aa3f488989940e1f5d99d266aac8b3a2 ""
+  "imagens/elementosorbitais.png" 1746154879 148355 e34be1290bb947171e84e36c9bd00b37 ""
   "imagens/esquemarotorb.png" 1735329283 73909 b10df2112cd7917ede072c3c1907ba0c ""
   "imagens/figurabarra.png" 1741492790 83979 7bdb892c2a80dbffde347398a2c03520 ""
   "imagens/fotoJWSTeinstenring.png" 1735104326 6951823 5629f85fa9839560f3d0bc0070e64de4 ""
@@ -251,10 +252,10 @@
   "imagens/rotorbt1.png" 1735332065 26424 b15a7741176156f8b32031822dd3aa46 ""
   "imagens/trigesfericoorbita.jpg" 1735668654 31837 b9c6791bd954b9ce5df311fae5c72c8b ""
   "imagens/vetores ecliptica.png" 1735682011 42864 07ee46f130272a8a0d37584fceeddb90 ""
-  "maiacustom.sty" 1741535033 3600 bd7add4f8ff292d1a1f9c50ae8ea1750 ""
-  "meccelestesol.aux" 1742525047 3095 6af13765ae7d1c9e6c746d7bd0a76695 "pdflatex"
-  "meccelestesol.out" 1742525047 129 a3972f941f642efe6e91fa78a87bf275 "pdflatex"
-  "meccelestesol.tex" 1742525033 93186 a343288a587dacd48d85c115a6fda1cc ""
+  "maiacustom.sty" 1746155041 3608 15835d20280a2442a9a84dcdda65a561 ""
+  "meccelestesol.aux" 1746159236 3226 3c3498466fa60ee7bb9e28f48dc107f2 "pdflatex"
+  "meccelestesol.out" 1746159236 129 a3972f941f642efe6e91fa78a87bf275 "pdflatex"
+  "meccelestesol.tex" 1746159230 95281 e18619ebb34b987e3189825d3fb45144 ""
   (generated)
   "meccelestesol.aux"
   "meccelestesol.log"

@@ -1,6 +1,6 @@
-PWD c:\Users\femai\OneDrive\Área de Trabalho\Latex Geral\Astronomia\banco de questoes\Listas Por materia\mecceleste
+PWD c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\mecceleste
 INPUT C:\Users\femai\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\femai\OneDrive\Área de Trabalho\Latex Geral\Astronomia\banco de questoes\Listas Por materia\mecceleste\meccelestesol.tex
+INPUT c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\mecceleste\meccelestesol.tex
 OUTPUT meccelestesol.log
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -87,6 +87,7 @@ INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.s
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
@@ -124,7 +125,6 @@ INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\needspace\needspace.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\needspace\needspace.sty
-INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
@@ -483,6 +483,13 @@ INPUT .\imagens\anelE.png
 INPUT .\imagens\anelE.png
 INPUT .\imagens\anelE.png
 INPUT .\imagens\anelE.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
 INPUT .\imagens\grafico OG 1.png
 INPUT .\imagens\grafico OG 1.png
 INPUT .\imagens\grafico OG 1.png
