@@ -1,6 +1,6 @@
-PWD c:\Users\femai\OneDrive\Área de Trabalho\Latex Geral\Astronomia\banco de questoes\Listas Por materia\mis
+PWD c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\mis
 INPUT C:\Users\femai\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\femai\OneDrive\Área de Trabalho\Latex Geral\Astronomia\banco de questoes\Listas Por materia\mis\missol.tex
+INPUT c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\mis\missol.tex
 OUTPUT missol.log
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
