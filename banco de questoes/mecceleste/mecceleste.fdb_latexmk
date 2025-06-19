@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742525014.78186 "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/mecceleste/mecceleste.tex" "mecceleste.pdf" "mecceleste" 1742525019.3877 0
+["pdflatex"] 1746499407.70173 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/mecceleste/mecceleste.tex" "mecceleste.pdf" "mecceleste" 1746499412.08824 0
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1730851663 12668 2ed3ebfe78a8b8a0dace041e7e76ac2e ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
@@ -230,7 +230,7 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/mecceleste/mecceleste.tex" 1742525013 35381 1471bc04d9478464e247bfcdb5382cf7 ""
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/mecceleste/mecceleste.tex" 1746499401 37101 9033eee889835803e3c289300c5a2e36 ""
   "imagens/anelE.png" 1735104104 59438 aa3f488989940e1f5d99d266aac8b3a2 ""
   "imagens/figurabarra.png" 1741492790 83979 7bdb892c2a80dbffde347398a2c03520 ""
   "imagens/fotoJWSTeinstenring.png" 1735104326 6951823 5629f85fa9839560f3d0bc0070e64de4 ""
@@ -238,10 +238,10 @@
   "imagens/q5(1).png" 1730165657 10118 45f334614003b84179552da5a6e92d21 ""
   "imagens/q5(2).png" 1730165708 12972 422b63bffb1acf74867ddc1864ea7f52 ""
   "imagens/vetores ecliptica.png" 1735682011 42864 07ee46f130272a8a0d37584fceeddb90 ""
-  "maiacustom.sty" 1741535033 3600 bd7add4f8ff292d1a1f9c50ae8ea1750 ""
-  "mecceleste.aux" 1742525018 2067 13f228c6d4486220fb08a544d5030a29 "pdflatex"
-  "mecceleste.out" 1742525018 129 a3972f941f642efe6e91fa78a87bf275 "pdflatex"
-  "mecceleste.tex" 1742525013 35381 1471bc04d9478464e247bfcdb5382cf7 ""
+  "maiacustom.sty" 1746155041 3608 15835d20280a2442a9a84dcdda65a561 ""
+  "mecceleste.aux" 1746499411 2067 d5a7814addca3eb68d9a81275598cc59 "pdflatex"
+  "mecceleste.out" 1746499411 129 a3972f941f642efe6e91fa78a87bf275 "pdflatex"
+  "mecceleste.tex" 1746499401 37101 9033eee889835803e3c289300c5a2e36 ""
   (generated)
   "mecceleste.aux"
   "mecceleste.log"

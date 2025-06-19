@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742350925.43019 "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/opt/opt.tex" "opt.pdf" "opt" 1742350930.19423 0
+["pdflatex"] 1750303133.61513 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/opt/opt.tex" "opt.pdf" "opt" 1750303136.78506 0
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -225,14 +225,14 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/opt/opt.tex" 1742350924 8783 fc7ae4e5709c69245a27879baf6ddeb7 ""
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/opt/opt.tex" 1750303132 8973 59358abce37ea220b015605cd89e9aa8 ""
   "imagens/lentes1.png" 1734240225 67236 4c38adab0ba1d02723ae1bd8a8997453 ""
   "imagens/lentes2.png" 1734240558 327547 12d480d836ce9efdb6370a2f72f842aa ""
   "imagens/lentes3.png" 1734241555 82601 d0ce32370e5fe4a7156b7e91a6755a18 ""
   "maiacustom.sty" 1741535033 3600 bd7add4f8ff292d1a1f9c50ae8ea1750 ""
-  "opt.aux" 1742350929 1147 66f775858bb3f939d7282a900a8d20b8 "pdflatex"
-  "opt.out" 1742350929 155 9fcdcc5312fa0d7bd84548b01ff7b9d2 "pdflatex"
-  "opt.tex" 1742350924 8783 fc7ae4e5709c69245a27879baf6ddeb7 ""
+  "opt.aux" 1750303136 1147 66f775858bb3f939d7282a900a8d20b8 "pdflatex"
+  "opt.out" 1750303136 155 9fcdcc5312fa0d7bd84548b01ff7b9d2 "pdflatex"
+  "opt.tex" 1750303132 8973 59358abce37ea220b015605cd89e9aa8 ""
   (generated)
   "opt.aux"
   "opt.log"

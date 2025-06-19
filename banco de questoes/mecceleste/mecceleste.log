@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.30)  20 MAR 2025 23:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.30)  5 MAY 2025 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/mecceleste/mecceleste.tex"
-(c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/mecceleste/mecceleste.tex
+**"c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/mecceleste/mecceleste.tex"
+(c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/mecceleste/mecceleste.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-10-09>
 (C:\Users\femai\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -231,7 +231,7 @@ package with kernel methods
 \c@Item=\count293
 \c@Hfootnote=\count294
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver: hpdftex.
  (C:\Users\femai\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2024-07-10 v7.01j Hyperref driver for pdfTeX
  (C:\Users\femai\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
@@ -1052,7 +1052,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has
 l.508         \]
                  <./imagens/figurabarra.png>]
 
-[14] (mecceleste.aux)
+[14]
+
+[15] (mecceleste.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-10-09>
@@ -1061,17 +1063,17 @@ Package rerunfilecheck Info: File `mecceleste.out' has not changed.
 (rerunfilecheck)             Checksum: A3972F941F642EFE6E91FA78A87BF275;129.
  ) 
 Here is how much of TeX's memory you used:
- 50550 strings out of 473897
- 1238208 string characters out of 5726461
- 1867054 words of memory out of 5000000
+ 50556 strings out of 473897
+ 1238034 string characters out of 5726461
+ 1867055 words of memory out of 5000000
  72745 multiletter control sequences out of 15000+600000
  565544 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,1011b,1249s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,107p,989b,1249s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\femai\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on mecceleste.pdf (14 pages, 7469165 bytes).
+Output written on mecceleste.pdf (15 pages, 7473789 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

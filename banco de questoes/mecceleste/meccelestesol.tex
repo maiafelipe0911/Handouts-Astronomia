@@ -1747,6 +1747,50 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
         \begin{alternativas}
             \item Primeiramente, note que \(v_{r, aparente} = |\mathbf{\omega}\times\mathbf{r}| = \omega r \sin i = v_r \sin i\), logo \(K = v_r\sin i = \frac{2\pi a_1}{T}\sin i\). Defindino \(a=a_1+a_2\) e \(M = M_1+M_2\) onde \(a_i\) e \(M_i\) representam a distância entre a estrela \(i\) e o CM e a massa da estrela \(i\), temos a terceira lei de kepler como, 
             \[\frac{a^3}{T^2} = \frac{GM}{4\pi^2}\]
+
+            \[a^3 = \frac{GM}{4\pi^2}T^2 \rightarrow T = 2\pi \sqrt{\frac{a^3}{GM}}\]
+
+            Substituindo $T = \frac{2\pi a_1}{v_1}$
+
+            $$(a_1+a_2)^3= \frac{G(M_1+M_2)a_1^2}{v_1^2}$$
+
+            $$(1+a_2/a_1)^2 = \frac{G(M_1+M_2)}{(a_1+a_2)v_1^2}$$
+
+            Também, usando o teorema do centro de massa, 
+
+            $$\frac{a_1}{a_2} = \frac{M_2}{M_1}$$
+
+            Trabalhando na função de massa, 
+
+            $$\frac{1}{f} = \frac{(1+M_1/M_2)^2}{M_2\sin^3 i} = \frac{(1+a_2/a_1)^2}{M_2\sin^3i}$$
+
+            Substituindo $(1+a_2/a_1)$
+
+            $$\frac{1}{f} = \frac{G(M_1+M_2)}{(a_1+a_2)M_2v_1^2\sin^3i} = \frac{G(1+M_1/M_2)}{(a_1+a_2)v_1^2\sin^3i} = \frac{G(1+a_2/a_1)}{(a_1+a_2)v_1^2\sin^3i}$$
+
+            Substituindo $(1+a_2/a_1)$ novamente, 
+
+            $$\frac{1}{f} = \frac{G}{v_1^3\sin^3i}\sqrt{\frac{G(M_1+M_2)}{(a_1+a_2)^3}}$$
+
+            Mas olhe a similaridade do termo dentro da raiz com a terceira lei de kepler! Assim, 
+
+            $$\frac{1}{f} = \frac{2\pi G }{T v_1^3\sin^2i}$$
+
+            Finalmente, substituindo K e reajeitando, 
+
+            $$\boxed{f = \frac{TK^3}{2\pi G}}$$
+
+            \item Suponto $i = 90^\circ$, temos 
+            
+            $$f = \frac{M_2^3}{(M_1+M_2)^2}$$
+
+            Usando unidades de massas solares e $M_1 = 2M_\odot$, temos, 
+
+            $$46,2 = \frac{M_2^3}{(2+M_2)^2}$$
+
+            $$M_2 = \left(46,2 (2+M_2)^2\right)^{1/3}$$
+
+            Usando iteração podemos encontrar $\boxed{M_2 = }$
         \end{alternativas}
     \end{pssolution*}
 \end{pproblem}
@@ -1759,6 +1803,27 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
         \item Qual o intervalo de tempo entre o Juventino lançar o foguete e a base de Raposo ser explodida?
     \end{alternativas}
     
+\end{pproblem}
+
+\pts{5}
+\begin{pproblem}
+    Nesse problema, nosso objetivo será calcular o período de precessão da Terra. Para isso, vamos considerar a Terra como um elipsoide, com raio polar $R_p$, raio equatiorial $R_e$, com período de rotação em torno do eixo polar $T = 23^h56^m4^s$ e massa $M_\oplus$ uniformemente distribuida. Para o nosso modelo, considere que apenas o Sol e a Lua exercem forças gravitacionais relevantes para o problema.
+    \begin{alternativas}
+        \item Considerando que $R_p = R_\oplus$, qual o valor numérico de $R_e$?
+        
+        \item O momento de inercía de um corpo, pode ser calculado por $I = \int r^2 dm$. Sabendo disso, calcule o momento de inercia no eixo x e no eixo y de um elipsoide dado pela equação 
+        $$\frac{x^2}{R_e^2} + \frac{y^2}{R_p^2} + \frac{z^2}{R_p^2}= 1$$
+        Com os momentos de inercia calculados, para a Terra, vamos definir o eixo $x$ como o eixo que contem o equador e o eixo $y$ como aquele que contem os polos. Calcule a quantidade, 
+        $$\frac{I_p}{(I_p-I_e)}$$
+
+        Onde $I_p$ é o momento de inercia polar (no eixo y) e $I_e$ o momento de inceria equatorial (no eixo y)
+        
+
+        \item Encontre uma expressão para o exercicios pelo sistema Sol-Lua na Terra. (Dica, devido a simetria, muitos termos dentro de integrais irão zerar e o torque final terá componente em apenas uma direção no sistema de coordenadas definidos anteriormente)
+        \item Por fim, utilizando a equação, 
+        $$\vec{\tau} = \Omega \times \mathbf{L} $$
+        Onde $\mathbf{L}$ é o momento angular e $\Omega$ é a frequencia de precessão, encontre o período de precessão da Terra.
+    \end{alternativas}
 \end{pproblem}
     
 
