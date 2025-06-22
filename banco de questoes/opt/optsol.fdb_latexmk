@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1750303071.81092 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/opt/optsol.tex" "optsol.pdf" "optsol" 1750303075.44983 0
+["pdflatex"] 1750393293.07719 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/opt/optsol.tex" "optsol.pdf" "optsol" 1750393299.28098 0
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -227,14 +227,14 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/opt/optsol.tex" 1750303070 18636 50d76a1f348f069483e592cba7613a6a ""
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/opt/optsol.tex" 1750393289 18555 a72750686a2be3ac27c543cda6a7303d ""
   "imagens/lentes1.png" 1734240225 67236 4c38adab0ba1d02723ae1bd8a8997453 ""
   "imagens/lentes2.png" 1734240558 327547 12d480d836ce9efdb6370a2f72f842aa ""
   "imagens/lentes3.png" 1734241555 82601 d0ce32370e5fe4a7156b7e91a6755a18 ""
   "maiacustom.sty" 1741535033 3600 bd7add4f8ff292d1a1f9c50ae8ea1750 ""
-  "optsol.aux" 1750303074 1147 8dbcb390f19491ae528fa7ce24971718 "pdflatex"
-  "optsol.out" 1750303074 155 9fcdcc5312fa0d7bd84548b01ff7b9d2 "pdflatex"
-  "optsol.tex" 1750303070 18636 50d76a1f348f069483e592cba7613a6a ""
+  "optsol.aux" 1750393298 1147 8dbcb390f19491ae528fa7ce24971718 "pdflatex"
+  "optsol.out" 1750393298 155 9fcdcc5312fa0d7bd84548b01ff7b9d2 "pdflatex"
+  "optsol.tex" 1750393289 18555 a72750686a2be3ac27c543cda6a7303d ""
   (generated)
   "optsol.aux"
   "optsol.log"
