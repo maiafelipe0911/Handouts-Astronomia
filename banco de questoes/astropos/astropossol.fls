@@ -1,6 +1,6 @@
-PWD c:\Users\femai\OneDrive\Área de Trabalho\Latex Geral\Astronomia\banco de questoes\Listas Por materia\astropos
+PWD c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\astropos
 INPUT C:\Users\femai\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\femai\OneDrive\Área de Trabalho\Latex Geral\Astronomia\banco de questoes\Listas Por materia\astropos\astropossol.tex
+INPUT c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\astropos\astropossol.tex
 OUTPUT astropossol.log
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -431,6 +431,20 @@ INPUT .\imagens\angulohorizonte.png
 INPUT .\imagens\angulohorizonte.png
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT .\imagens\orbitas3.png
+INPUT .\imagens\orbitas3.png
+INPUT .\imagens\orbitas3.png
+INPUT .\imagens\orbitas3.png
+INPUT .\imagens\orbitas3.png
+INPUT .\imagens\orbitas3.png
+INPUT .\imagens\orbitas3.png
+INPUT .\imagens\orbitas4.png
+INPUT .\imagens\orbitas4.png
+INPUT .\imagens\orbitas4.png
+INPUT .\imagens\orbitas4.png
+INPUT .\imagens\orbitas4.png
+INPUT .\imagens\orbitas4.png
+INPUT .\imagens\orbitas4.png
 INPUT .\imagens\q20.png
 INPUT .\imagens\q20.png
 INPUT .\imagens\q20.png

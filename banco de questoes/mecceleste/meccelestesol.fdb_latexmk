@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1747948739.60993 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/mecceleste/meccelestesol.tex" "meccelestesol.pdf" "meccelestesol" 1747948744.69371 0
+["pdflatex"] 1750973021.59594 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/mecceleste/meccelestesol.tex" "meccelestesol.pdf" "meccelestesol" 1750973039.05038 0
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1730851663 12668 2ed3ebfe78a8b8a0dace041e7e76ac2e ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
@@ -235,7 +235,7 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/mecceleste/meccelestesol.tex" 1747948738 98548 9f4355fd98294c5cb7d678f0f871255e ""
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/mecceleste/meccelestesol.tex" 1750973015 98682 a7bd443f2ba3d32d7d017ec715332329 ""
   "imagens/anelE.png" 1735104104 59438 aa3f488989940e1f5d99d266aac8b3a2 ""
   "imagens/elementosorbitais.png" 1746154879 148355 e34be1290bb947171e84e36c9bd00b37 ""
   "imagens/esquemarotorb.png" 1735329283 73909 b10df2112cd7917ede072c3c1907ba0c ""
@@ -253,9 +253,9 @@
   "imagens/trigesfericoorbita.jpg" 1735668654 31837 b9c6791bd954b9ce5df311fae5c72c8b ""
   "imagens/vetores ecliptica.png" 1735682011 42864 07ee46f130272a8a0d37584fceeddb90 ""
   "maiacustom.sty" 1746155041 3608 15835d20280a2442a9a84dcdda65a561 ""
-  "meccelestesol.aux" 1747948744 3226 b36d946700196dcc2fb4f72420b66dc4 "pdflatex"
-  "meccelestesol.out" 1747948744 129 a3972f941f642efe6e91fa78a87bf275 "pdflatex"
-  "meccelestesol.tex" 1747948738 98548 9f4355fd98294c5cb7d678f0f871255e ""
+  "meccelestesol.aux" 1750973038 3226 b36d946700196dcc2fb4f72420b66dc4 "pdflatex"
+  "meccelestesol.out" 1750973038 129 a3972f941f642efe6e91fa78a87bf275 "pdflatex"
+  "meccelestesol.tex" 1750973015 98682 a7bd443f2ba3d32d7d017ec715332329 ""
   (generated)
   "meccelestesol.aux"
   "meccelestesol.log"

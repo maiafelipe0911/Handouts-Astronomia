@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742350676.70125 "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/astropos/astropossol.tex" "astropossol.pdf" "astropossol" 1742350680.83789 0
+["pdflatex"] 1753936042.28501 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/astropos/astropossol.tex" "astropossol.pdf" "astropossol" 1753936045.73881 0
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1730851663 12668 2ed3ebfe78a8b8a0dace041e7e76ac2e ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
@@ -228,11 +228,13 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "astropossol.aux" 1742350680 1711 f61cfacb277da5baf17d17417674650f "pdflatex"
-  "astropossol.out" 1742350680 160 05dac176340e765a83f7546c0b3466dd "pdflatex"
-  "astropossol.tex" 1742350675 25935 49dd55f41558d8f71ff40d34fecb217d ""
-  "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/astropos/astropossol.tex" 1742350675 25935 49dd55f41558d8f71ff40d34fecb217d ""
+  "astropossol.aux" 1753936045 2023 b95acc8ca3962dd4cb4025fb667037e2 "pdflatex"
+  "astropossol.out" 1753936045 160 05dac176340e765a83f7546c0b3466dd "pdflatex"
+  "astropossol.tex" 1753936040 30408 61913388c81342dc5e9b2244f159de3e ""
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/astropos/astropossol.tex" 1753936040 30408 61913388c81342dc5e9b2244f159de3e ""
   "imagens/angulohorizonte.png" 1738469507 59416 f9a02bc9243a949e066cdae40f939bc4 ""
+  "imagens/orbitas3.png" 1753933636 79003 8b96b3ae02f9f48c65bbc30abf5f1b57 ""
+  "imagens/orbitas4.png" 1753933756 80758 2f8f2a26b279a5fb26341163d81b9268 ""
   "imagens/q16.png" 1730742829 778634 dee8f5833823dbdc56c016b76cc0f4fb ""
   "imagens/q20.png" 1730745744 17860 91fbb1e47700cf1e63ec3dd6d8897bf3 ""
   "imagens/q6.jpg" 1730169235 51696 b2fc9b04a1d225daa56f7f216cff4eef ""

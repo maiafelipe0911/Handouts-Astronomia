@@ -362,12 +362,12 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
     Já para o produto vetorial, temos:
         \[
-        \mathbf{a} \times \mathbf{b} = a_i b_j \Epsilon_{ijk} \hat{\mathbf{e}}_k
+        \mathbf{a} \times \mathbf{b} = a_i b_j \varepsilon_{ijk} \hat{\mathbf{e}}_k
         \]
-        Aqui, \(\Epsilon_{ijk}\) é denominado \textit{tensor de Levi-Civita}, ou símbolo de Levi-Civita, e é definido como:
+        Aqui, \(\varepsilon_{ijk}\) é denominado \textit{tensor de Levi-Civita}, ou símbolo de Levi-Civita, e é definido como:
     
         \[
-        \Epsilon_{ijk} = 
+        \varepsilon_{ijk} = 
         \begin{cases} 
         +1 & \text{se } (i, j, k) \text{ é uma permutação par de } (1, 2, 3), \\
         -1 & \text{se } (i, j, k) \text{ é uma permutação ímpar de } (1, 2, 3), \\
@@ -375,10 +375,84 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
         \end{cases}
         \]
 
-        Por exemplo, \(\Epsilon_{123} = \Epsilon_{312} = \Epsilon_{231} = 1\) e \(\Epsilon_{132} = \Epsilon_{213} = \Epsilon_{321} = -1\).
+        Por exemplo, \(\varepsilon_{123} = \varepsilon_{312} = \varepsilon_{231} = 1\) e \(\varepsilon_{132} = \varepsilon_{213} = \varepsilon_{321} = -1\).
         Explicitamente 
         \[\mathbf{a} \times \mathbf{b} = (a_2 b_3 - a_3 b_2) \hat{\mathbf{e}}_1 + (a_3 b_1 - a_1 b_3) \hat{\mathbf{e}}_2 + (a_1 b_2 - a_2 b_1) \hat{\mathbf{e}}_3\]
+   
+        Também é de extrema importância a identidade 
+
+        \[\varepsilon_{a,b,c}\varepsilon_{a,d,e} = \delta_{b,d}\delta_{c,e}-\delta_{b,e}\delta_{c,d}\]
     \end{psidea}
+\begin{pssolution*}{}{}
+    Para resolver esse problema, vamos utilizar dois conceitos importantíssimos de vetores. Sendo dois vetores $\mathbf A$ e $\mathbf B$. É dado que, $\mathbf A \cdot \mathbf B$ faz parte do plano formado pelos vetores $\mathbf A$ e $\mathbf B$, já $\mathbf A \times \mathbf B$ é perpendicular a esse plano. Assim, seja $\mathbf r_1$ e $\mathbf r_2$ dois vetores representando as posições do primeriro asteroide e $\mathbf r_3$ e $\mathbf r_4$ os dois vetores posições do segundo asteroide. A orbita do primeiro asteroide está contida no plano de $\mathbf r_1 \cdot \mathbf r_2$ e a órbita do segundo asteróide está contida no plano $\mathbf r_3 \cdot \mathbf r_4$. Mas, o que é interessante para resolver essa questão é analizar o produto vetorial, pois esse é perpendicular a órbita. Para melhor visualização, vamos olhar a seguinte imagem:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{imagens/orbitas3.png}
+        \caption{Esquema das órbitas e visualização das multiplicações vetoriais}
+    \end{figure}
+
+    Agora, quando vamos além e fazemos a operação \((\mathbf r_1 \times \mathbf r_2)\times(\mathbf r_3 \times \mathbf r_4)\) temos um vetor que é perpendicular tanto ao vetor \(\mathbf r_1\times \mathbf r_2\) e quando o vetor \(\mathbf r_3\times \mathbf r_4\). E esse vetor, \textbf{necessariamente} passa pelo ponto comum entre as órbitas.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{imagens/orbitas4.png}
+        \caption{Ponto de encontro}
+    \end{figure}
+
+    Note que pela simetria $(\mathbf r_3\times \mathbf r_4)\times(\mathbf r_1\times \mathbf r_2)\equiv - (\mathbf r_1 \times \mathbf r_2)\times (\mathbf r_3 \times \mathbf r_4)$ também será um ponto de encontro. Agora, vamos calcular esse vetor.
+
+    Para conventer o vetor definido por $h_i$ e $A_i$ (em coordenadas esféricas) para $x_i$, $y_i$ e $z_i$ temos o seguinte, 
+
+    $$\mathbf r_i = (\cos h_i\cos A_i, \ \cos h_i\sin A_i, \ \sin h_i)$$
+
+    Aonde orientamos nossos eixos do modo que $x$ aponta para o norte e $z$ para o zênite. Indo para o cálculo e usando a notação de Einsten, 
+
+    \[(\mathbf r_1 \times \mathbf r_2)\times(\mathbf r_3 \times \mathbf r_4) = (r_{1,i}r_{2,j}\varepsilon_{i,j,k}\mathbf{\hat{e}}_k)\times(r_{3,m}r_{4,n}\varepsilon_{m,n,o}\mathbf{\hat{e}}_o)\]
+
+    Simplificando, 
+
+    \[= \varepsilon_{i,j,k}\varepsilon_{m,n,o}r_{1,i}r_{2,j}r_{3,m}r_{4,n}(\varepsilon_{k,o,p}\mathbf{\hat{e}}_p)\]
+    \[= \varepsilon_{i,j,k}\varepsilon_{m,n,o}\varepsilon_{k,o,p}r_{1,i}r_{2,j}r_{3,m}r_{4,n}\mathbf{\hat{e}}_p\]
+
+    Agora para simplificar, vamos usar a identidade 
+
+    \[\varepsilon_{a,b,c}\varepsilon_{a,d,e} = \delta_{b,d}\delta_{c,e}-\delta_{b,e}\delta_{c,d}\]
+
+    Dessa maneira, nossa expressão se torna, 
+
+    \[\varepsilon_{m,n,o}r_{3,m}r_{4,n}(\delta_{io}\delta_{jp}-\delta_{ip}\delta_{jo})r_{1,i}r_{2,j}\mathbf{\hat e}_p\]
+    
+    Resolvendo as deltas de Kronecker, nossa expressão se resume para, 
+
+    \[(\varepsilon_{m,n,o}r_{3,m}r_{4,n}r_{1,o}r_{2,p}-\varepsilon_{m,n,o}r_{3,m}r_{4,n}r_{1,p}r_{2,o})\mathbf{\hat e}_p\]
+
+    A primeira vista, isso pode parecer assustador ou até mais complicado que a expressão vetorial, mas com a prática da notação, a leitura se torna mais flúida e objetiva. Com um trabalho de corno, chegamos em, 
+
+    \[\boxed{(\mathbf r_1 \times \mathbf r_2)\times(\mathbf r_3 \times \mathbf r_4) = T_1\mathbf r_2 - T+2\mathbf r_1}\]
+
+    Onde
+
+    \[
+    \begin{aligned}
+    T_1 &= 
+    \cos h_1 \cos h_3 \sin h_4 \sin(A_3 - A_1)
+    + \cos h_1 \cos h_4 \sin h_3 \sin(A_1 - A_4) \\
+    &\quad + \sin h_1 \cos h_3 \cos h_4 \sin(A_4 - A_3)
+    \end{aligned}
+    \]
+
+    \[
+    \begin{aligned}
+    T_2 &=
+    \cos h_2 \cos h_3 \sin h_4 \sin(A_3 - A_2)
+    + \cos h_2 \cos h_4 \sin h_3 \sin(A_2 - A_4) \\
+    &\quad + \sin h_2 \cos h_3 \cos h_4 \sin(A_4 - A_3)
+    \end{aligned}
+    \]
+
+    Embora interessante, cehgar numa fórmula fechada é muito trabalhoso, porém esse tipo de abordagem é ideal para trabalhar com valores númericos, torando problemas díficeis em versões muito mais simplistas.
+\end{pssolution*}
 \end{pproblem}
 
 
