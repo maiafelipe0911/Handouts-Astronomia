@@ -1811,21 +1811,152 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 \begin{pproblem}
     Nesse problema, nosso objetivo será calcular o período de precessão da Terra. Para isso, vamos considerar a Terra como um elipsoide, com raio polar $R_p$, raio equatiorial $R_e$, com período de rotação em torno do eixo polar $T = 23^h56^m4^s$ e massa $M_\oplus$ uniformemente distribuida. Para o nosso modelo, considere que apenas o Sol e a Lua exercem forças gravitacionais relevantes para o problema.
     \begin{alternativas}
-        \item Considerando que $R_p = R_\oplus$, qual o valor numérico de $R_e$?
+        \item Considerando que $R_p = R_\oplus\approx 6371 \text{ km}$, qual o valor numérico de $R_e$?
         
-        \item O momento de inercía de um corpo, pode ser calculado por $I = \int r^2 dm$. Sabendo disso, calcule o momento de inercia no eixo x e no eixo y de um elipsoide dado pela equação 
-        $$\frac{x^2}{R_e^2} + \frac{y^2}{R_p^2} + \frac{z^2}{R_p^2}= 1$$
+        \item O momento de inercía de um corpo, pode ser calculado por $I = \int r^2 dm$. Sabendo disso, calcule o momento de inercia no eixo x e no eixo z de um elipsoide dado pela equação 
+        $$\frac{x^2}{R_e^2} + \frac{y^2}{R_e^2} + \frac{z^2}{R_p^2}= 1$$
         Com os momentos de inercia calculados, para a Terra, vamos definir o eixo $x$ como o eixo que contem o equador e o eixo $y$ como aquele que contem os polos. Calcule a quantidade, 
         $$\frac{I_p}{(I_p-I_e)}$$
 
-        Onde $I_p$ é o momento de inercia polar (no eixo y) e $I_e$ o momento de inceria equatorial (no eixo y)
+        Onde $I_p$ é o momento de inercia polar (no eixo y) e $I_e$ o momento de inceria equatorial (no eixo y). Assuma que a terra seja homogênea. Devido a assompção de uma Terra homogênea, a sua quantia será 93\% do que a quantidade real. 
         
 
-        \item Encontre uma expressão para o exercicios pelo sistema Sol-Lua na Terra. (Dica, devido a simetria, muitos termos dentro de integrais irão zerar e o torque final terá componente em apenas uma direção no sistema de coordenadas definidos anteriormente)
+        \item Encontre uma expressão para o torque exercicios pelo sistema Sol-Lua na Terra. (Dica, devido a simetria, muitos termos dentro de integrais irão zerar e o torque final terá componente em apenas uma direção no sistema de coordenadas definidos anteriormente)
         \item Por fim, utilizando a equação, 
         $$\vec{\tau} = \Omega \times \mathbf{L} $$
         Onde $\mathbf{L}$ é o momento angular e $\Omega$ é a frequencia de precessão, encontre o período de precessão da Terra.
     \end{alternativas}
+
+    \begin{pssolution*}{}{}
+        \begin{alternativas}
+            \item Como a Terra está em equilíbrio hidrostático, 
+            
+            \[\frac{GM_\oplus}{r_p} = \frac{GM_\oplus}{r_e}+\frac{1}{2}\omega^2 r_e^2\]
+        
+            Resolvendo para \(r_e\), 
+
+            \[r_e = \frac{T}{2\pi}\sqrt{2GM_\oplus\left(\frac{1}{r_p}-\frac{1}{r_e}\right)}\]
+
+            Iterando, podemos obter, 
+
+            \[r_e \approx 6382 \text{ km}\]
+
+            \item Dada a definição do elipsoide, \(x\) e \(y\) estão no plano equatorial e \(z\) passa pelo centro da Terra e pelo polo norte celeste. Calculando os momentos de inércia, 
+            
+            \[I_{zz} = \int(y^2+z^2)dm = \rho \iiint (x^2+y^2)dxdydz\]
+
+            Usando a transformação, 
+
+            \[x = R_e u \, \ y = R_e v \, \ z = R_p w\]
+
+            De modo que \(u^2+v^2+w^2=1\), temos, 
+
+            \[I_{zz} = \rho\iiint (R_e^2u^2+R_e^2v^2) R_e^2R_pdudvdw = \rho R_e^4R_p \iiint (u^2+v^2)dudvdw\]
+
+            Como \(u^2+v^2+w^2=1\) descreve uma esfera unitária, temos simetria, o que garante, 
+
+            \[\iiint u^2d\Omega = \iint v^2d\Omega = \iint w^2d\Omega = \frac{1}{3}\iiint(u^2+v^2+w^2)d\Omega\]
+
+            Podemos simplificar, 
+
+            \[\frac{1}{3}\iiint(u^2+v^2+w^2)d\Omega = \frac{1}{3}\int_0^{2\pi}\int_{0}^{\pi}\int_0^1 r^4\sin\theta drd\theta d\phi = \frac{4\pi}{15}\]
+
+            Resolvendo para \(I_{zz}\), 
+
+            \[I_{zz} = \rho R_e^4 R_p \left(\frac{4\pi}{15}+\frac{4\pi}{15}\right)\]
+
+            Substituindo \(\rho = 3M_\oplus/4\pi R_e^2R_p\), obtemos, 
+
+            \[I_{zz} = \frac{2}{5}M_\oplus R_e^2\]
+
+            Fazendo a mesma coisa para 
+
+            \[I_{xx} = \rho R_e^2R_p\iiint ((R_ev)^2+(R_pw)^2)dudvdw\]
+
+            Vamos obter 
+
+            \[I_{xx} = \frac{1}{5}M_\oplus(R_e^2+R_p^2)\]
+
+            Note também que \(I_{zz} \equiv I_p\) e \(I_{xx}\equiv I_e\). Desse modo, 
+
+            \[\boxed{\frac{I_e}{I_p-I_e} \approx 580}\]
+
+            Como o nosso valor é \(93\%\) maior do que esperado, temos que na realidade essa quantida deve equivaler há \(\approx 300\). Vamos chamar essa quandidade de \(f\) e seguir com ela daqui pra frente.
+
+            \item Como o torque é tal que
+            
+            \[\tau \propto \frac{M}{r^3}\]
+
+            Temos 
+
+            \[\frac{\tau_{lua}}{\tau_\odot} = \frac{M_{lua}}{M_\odot}\frac{d_\odot}{d_{lua}}\approx 2,17\]
+
+            Agora, para encontrar o torque do Sol, vamos primeiro calcular a força que ele exerce em um diferencial de massa \(dm\) na Terra. Vamos definir \(\mathbf R\) como o vetor posição do Sol e \(\mathbf r\) o vetor posição do diferencial de massa.
+
+            \[d\mathbf F = -\frac{GM_\odot}{|\mathbf R - \mathbf r|^3}(\mathbf R - \mathbf r)dm\]
+
+            Com relação ao centro da Terra, o torque é 
+
+            \[d\vec\tau = \mathbf r \times d\mathbf F = \frac{GM_\odot}{|\mathbf R - \mathbf r|^3}(\mathbf R \times \mathbf r)dm\]
+
+            Usando que \(R>>r\) e a aproximação \((1+x)^n\approx 1+nx\) obtemos, 
+
+            \[d\vec\tau \approx \frac{GM_\oplus}{R^3}\left(1+3\frac{\mathbf R \cdot \mathbf r}{R^2}\right)(\mathbf R \times \mathbf r )dm\]
+
+            Expandindo o produto vetorial, 
+
+            \[\mathbf R \times \mathbf r = (R_yr_z - R_z r_y )\mathbf{\hat x} + (R_zr_x - R_xr_z)\mathbf {\hat y} + (R_xr_y - R_yr_x) \mathbf{\hat z}\]
+
+            Dessa maneira, 
+
+            \[\tau_x = \frac{GM_\oplus}{R^3}\int \left(1+3\frac{R_xr_x+R_yr_y+R_zr_z}{R^2}\right)(R_yr_z-R_zr_y)dm\]
+
+            Porém quando resolvemos a integral, podemos perceber que todos os termos na forma \(\int r_i dm \) e \(\int r_ir_jdm\) são nulos, devidos a simetria. Por tanto a nossa integral se reduz para 
+
+            \[\tau_x = \frac{3GM_\oplus}{R^5}R_yR_z\left(\int r_y^2dm + \int r_z^2dm\right)\]
+
+            As integrais restantes são os momentos de inercia em \(y\) e \(z\). Similarmente para \(\tau_y\) e \(\tau_z\) obtemos, 
+
+            \[\tau_x = \frac{3GM_\oplus}{R^5}R_yR_z (I_{yy}-I{zz})\]
+            \[\tau_y = \frac{3GM_\oplus}{R^5}R_zR_x (I_{zz}-I{xx})\]
+            \[\tau_z = \frac{3GM_\oplus}{R^5}R_xR_y (I_{xx}-I{yy})\]
+
+            Podemos descrever \(R_i\) usando o sistema de coordenadas elípticas.
+
+            \[R_x = R\sin\lambda \cos\epsilon\]
+            \[R_y = R\cos\lambda\]
+            \[R_z = R\sin\lambda\sin\epsilon\]
+
+            Onde \(\lambda\) é a longitude ecliptica do Sol. Assim, 
+
+            \[\tau_x = \frac{3GM_\oplus}{R^3}\sin\lambda\cos\lambda\sin\epsilon (I_{yy}-I_{zz})\]
+            \[\tau_y = \frac{3GM_\oplus}{R^3} \sin^2\lambda\sin\epsilon\cos\epsilon(I_{zz}-I_{xx})\]
+            \[\tau_z = \frac{3GM_\oplus}{R^3} \sin\lambda\cos\lambda\cos\epsilon(I_{xx}-I_{yy})\]
+
+            Para o efeito de precessão, o importante é o valor médio do torque, porém note que \[\langle\sin\lambda\cos\lambda\rangle = 0\]. Assim, o único toruqe que se mantém é o do eixo \(y\).
+
+            \[\vec\tau  = \langle\tau_y\rangle\mathbf{\hat{y}} = \frac{3GM_\oplus}{2R^3}\sin\epsilon\cos\epsilon (I_{zz}-I_{xx})\mathbf{\hat{y}}\]
+
+            Essa é apenas a contribuição do Sol. Adicionando a da Lua temos, 
+
+            \[\boxed{\vec\tau_{total} = \frac{4,75GM_\oplus}{R^3}\sin\epsilon\cos\epsilon (I_{p}-I_{e})\mathbf{\hat{y}}}\]
+
+            \item Utilizando a relação dada, 
+            
+            \[\vec\tau_{total} = \vec\Omega \times \vec L = \Omega L_\perp\]
+
+            O valor de \(L_\perp\) é \(I_p\omega\sin\epsilon\). Assim, 
+
+            \[\frac{4,75GM_\oplus}{R^3}\sin\epsilon\cos\epsilon (I_{p}-I_{e}) = \frac{2\pi}{T}I_p\omega\sin\epsilon\]
+
+            Resolvendo para \(T\), 
+
+            \[\boxed{T = \frac{2\pi}{4,75}\frac{R^3\omega}{GM_\oplus\cos\epsilon}\frac{I_p}{I_p-I_e}\approx 25300\text{ anos}}\]
+
+            O que é uma estimativa com apenas \(2\%\) de erro :)
+        
+        \end{alternativas}
+    \end{pssolution*}
 \end{pproblem}
     
 
