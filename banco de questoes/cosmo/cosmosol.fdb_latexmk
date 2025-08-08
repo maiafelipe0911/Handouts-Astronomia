@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1754368978.08652 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/cosmo/cosmosol.tex" "cosmosol.pdf" "cosmosol" 1754368981.38664 0
+["pdflatex"] 1754617728.65185 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/cosmo/cosmosol.tex" "cosmosol.pdf" "cosmosol" 1754617733.50049 0
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -226,10 +226,10 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/cosmo/cosmosol.tex" 1754368976 15758 ef18245dad38d565ed10e8b26856599f ""
-  "cosmosol.aux" 1754368980 756 69c0c5a9994017807e79f0bf1b7ac3ff "pdflatex"
-  "cosmosol.out" 1754368980 93 07f45187c8b6afa3ab930d8c6bfed1c5 "pdflatex"
-  "cosmosol.tex" 1754368976 15758 ef18245dad38d565ed10e8b26856599f ""
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/cosmo/cosmosol.tex" 1754617726 17556 8539a7b76a641ee1adc09ae468f2a3b0 ""
+  "cosmosol.aux" 1754617732 757 e796a7fe04df6446110dfc4ef5d34121 "pdflatex"
+  "cosmosol.out" 1754617732 93 07f45187c8b6afa3ab930d8c6bfed1c5 "pdflatex"
+  "cosmosol.tex" 1754617726 17556 8539a7b76a641ee1adc09ae468f2a3b0 ""
   "maiacustom.sty" 1741535033 3600 bd7add4f8ff292d1a1f9c50ae8ea1750 ""
   (generated)
   "cosmosol.aux"

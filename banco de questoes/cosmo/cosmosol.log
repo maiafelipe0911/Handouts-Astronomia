@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.30)  5 AUG 2025 01:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.30)  7 AUG 2025 22:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -939,11 +939,6 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
  (C:\Users\femai\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
-
- []
-
-
 
 [1{C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
@@ -961,7 +956,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
 [8]
 
-[9] (cosmosol.aux)
+[9]
+
+[10] (cosmosol.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-10-09>
@@ -970,17 +967,17 @@ Package rerunfilecheck Info: File `cosmosol.out' has not changed.
 (rerunfilecheck)             Checksum: 07F45187C8B6AFA3AB930D8C6BFED1C5;93.
  ) 
 Here is how much of TeX's memory you used:
- 50422 strings out of 473897
- 1235547 string characters out of 5726461
- 1881042 words of memory out of 5000000
- 72680 multiletter control sequences out of 15000+600000
+ 50426 strings out of 473897
+ 1235582 string characters out of 5726461
+ 1881045 words of memory out of 5000000
+ 72681 multiletter control sequences out of 15000+600000
  565203 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,107p,633b,1545s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,107p,633b,1559s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cosmosol.pdf (9 pages, 184578 bytes).
+Output written on cosmosol.pdf (10 pages, 188508 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
+ 158 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
