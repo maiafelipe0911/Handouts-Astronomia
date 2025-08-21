@@ -1804,6 +1804,82 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
         \item Qual a maior altura que o foguete chega?
         \item Qual o intervalo de tempo entre o Juventino lançar o foguete e a base de Raposo ser explodida?
     \end{alternativas}
+
+    \begin{pssolution*}{}{}
+        \begin{alternativas}
+            \item Utilizando conservação de energia, 
+            
+            \[-\frac{GM_\oplus m}{R_\oplus} + \frac{mv_0^2}{2} = -\frac{GM_\oplus m}{2a}\]
+
+            Resolvendo para \(a\), 
+
+            \[a = \frac{GM_\oplus}{2GM_\oplus - v_0^2 R_\oplus}R_\oplus\]
+
+            Substituindo \(v_0^2 = \frac{GM_\oplus}{R_\oplus}\), obtemos 
+
+            \[\boxed{a = R_\oplus}\]
+
+            \item Esquematizando a órbita do foguete, 
+            
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.7\linewidth]{imagens/orbitapn-eq.png}                
+            \end{figure}
+
+            Por geometria, podemos dizer que \(\overline{AO} = \overline{BO} = \frac{\overline{CD}}{2} = R_\oplus\). Usando trigonometria básica, obtemos \(\overline{AB} = R_\oplus \sqrt 2\). A maior altura que o foguete chega é dado por \(\overline{OD}-R_\oplus\).
+
+            Usando a propriedade da elipse que a somda das distância de um ponto até os dois focos é dada por \(2a\). Como \(O\) é um dos focos, temo que o outro foco, \(O'\) também dista \(R_\oplus\) de \(A\) e de \(B\). Nessas condições, o ponto \(O'\) deve distar \(R_\oplus\sqrt 2\) de \(O\) e estar contido na linha \(\overline{CD}\). Desse modo, \(AOBO'\) forma um quadrado de lado \(R_\oplus\).
+
+            O centro da linha \(\overline{OO'}\) é o centro da elipse. Portanto, \(\overline{AB} = 2b = 2a\sqrt{1-e^2}\). Substituindo o valor de \(\overline{AB}\), temos, 
+            
+            \[R_\oplus\sqrt 2 = 2 R_\oplus \sqrt{1-e^2}\]
+
+            Resolvendo para \(e\), 
+
+            \[e = \frac{1}{\sqrt{2}}\]
+
+            Portanto, \(\overline{OO'} = 2c = 2R_\oplus/\sqrt2\). Seja \(\overline{OC} = x\). Por simetria, \(\overline{OC} = \overline{O'D}\). Equacionando, 
+
+            \[\overline{CD} = \overline{CO}+\overline{OO'}+\overline{O'D} = 2x + \frac{2}{\sqrt2}R_\oplus = 2R_\oplus\]
+
+            \[x = R_\oplus\left(1 - \frac{1}{\sqrt2}\right)\]
+
+            Agora, podemos usar que \(\overline{OD} = \overline{CD} - \overline{OC} = R_\oplus\left(1+1/\sqrt2\right)\) e portanto, a maior altura que o foguete chega é 
+
+            \[\boxed{h = \overline{OD}-R_\oplus = \frac{R_\oplus}{\sqrt2}}\]
+
+            \item O ponto \(A\) tem anomalia verdadeira, \(\theta_A = \frac{\pi}{2}+\frac{\pi}{4} = \frac{3\pi}{4}\). Por simetria, o tempo de ir de \(C\) até \(A\) é o mesmo do tempo para ir de \(B\) até \(C\). Portanto, o tempo de ir de \(A\) até \(B\) é o perído da órbita menos duas vezes o tempo de \(O\) até \(A\). Para calcular esse último, vamos usar a equação de Kepler, 
+            
+            \[M = E - e\sin E\]
+
+            onde \(E\) é a anomalia excentrica, dedinida por 
+
+            \[r(E)= a(1-e\cos E)\]
+
+            \[E = \cos^{-1}\left(\frac{1-r/a}{e}\right)\]
+
+            Substituindo \(a = R_\oplus\), podemos encontrar \(E_A\). Quando o foguete está no ponto \(A\), \(r(A)=R_\oplus\), assim, 
+
+            \[E_A=\frac{\pi}{2}\]
+
+            Assim, 
+
+            \[M_A = \frac{\pi}{2}-\frac{1}{\sqrt{2}}\]
+
+            Finalmente, o tempo de ir de \(A\) até \(B\), é 
+
+            \[t_{AB} = T - 2t_{CA} = T\left(1 - \frac{M_A}{\pi}\right)\]
+            \[t_{AB} = T\left(1-\frac{1}{2}+\frac{1}{\pi\sqrt2}\right)\]
+
+            Utilizando a terceira Lei de Kepler, 
+
+            \[t_{AB} = \left(\frac{1}{2}+\frac{1}{\pi\sqrt2}\right)\sqrt{\frac{4\pi^2R_{\oplus}^3}{GM_\oplus}} \]
+
+            \[\boxed{t_{AB} \approx 1^h01^m}\]
+            
+      
+        \end{alternativas}
+    \end{pssolution*}
     
 \end{pproblem}
 
