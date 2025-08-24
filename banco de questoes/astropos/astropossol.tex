@@ -497,6 +497,40 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
     \\
     \textbf{Dados: } Latitude da SorveterITA \(\phi = 23^\circ \ 10' \ 45''S, \ \ \lambda = 45^\circ 53' 14''O\).
 \end{pproblem}
+\begin{pssolution*}{}{}
+    
+    Para resolver essa solução, vamos invocar o triângulo de posição para o Sol, equacionando para o seu angulo horário.
+
+    \[\sin h = \sin\delta\sin\phi + \cos\delta\cos\phi\cos H\] 
+
+    Derivando em relação ao tempo, 
+
+    \[\dot h \cos h = -\dot H \cos\delta\cos\phi \sin H\]
+
+    No por do sol, 
+
+    \[H_0 = \cos^{-1}\left(-\tan\delta\tan\phi\right)\]
+
+    Nas próximidades de \(h=0\), temos, 
+
+    \[\left. \frac{dh}{dt}\right|_{h=0} = -\dot H \cos\delta\cos\phi\sin H_0\]
+
+    No dia em questão, \(\delta = 0\) (equinócios), logo \(H_0 = 6h\)
+
+    \[\left. \frac{dh}{dt}\right|_{h=0} - \dot{H}\cos\phi\sin H_0\]
+
+    Note que \(\dot H = 15^{\circ}/h\). Resolvendo para \(dt\), 
+    
+    \[dt \approx \frac{-dh}{\dot{H}\cos\phi \sin H_0}\]
+
+    Integrando e usando que \(\sin H_0 = 1 \), 
+
+    \[\Delta t \approx -\frac{1}{\dot H \cos \phi}\int_{\theta\odot}^{-\theta\odot}dh\]
+
+    \[\Delta t \approx \frac{2\theta_\odot}{\dot H \cos \phi}\]
+
+    \[\boxed{\Delta t \approx 4^m38^s}\]
+\end{pssolution*}
 
 
 \pts{3}

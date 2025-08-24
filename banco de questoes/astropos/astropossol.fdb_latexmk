@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1753936042.28501 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/astropos/astropossol.tex" "astropossol.pdf" "astropossol" 1753936045.73881 0
+["pdflatex"] 1755963009.73792 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/astropos/astropossol.tex" "astropossol.pdf" "astropossol" 1755963014.32639 0
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1730851663 12668 2ed3ebfe78a8b8a0dace041e7e76ac2e ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
@@ -228,10 +228,10 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "astropossol.aux" 1753936045 2023 b95acc8ca3962dd4cb4025fb667037e2 "pdflatex"
-  "astropossol.out" 1753936045 160 05dac176340e765a83f7546c0b3466dd "pdflatex"
-  "astropossol.tex" 1753936040 30408 61913388c81342dc5e9b2244f159de3e ""
-  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/astropos/astropossol.tex" 1753936040 30408 61913388c81342dc5e9b2244f159de3e ""
+  "astropossol.aux" 1755963013 2023 a675630cdfe3d225e3c88f417451760b "pdflatex"
+  "astropossol.out" 1755963013 160 05dac176340e765a83f7546c0b3466dd "pdflatex"
+  "astropossol.tex" 1755963008 31494 63f5a031c71ea7b9c60644f158785658 ""
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/astropos/astropossol.tex" 1755963008 31494 63f5a031c71ea7b9c60644f158785658 ""
   "imagens/angulohorizonte.png" 1738469507 59416 f9a02bc9243a949e066cdae40f939bc4 ""
   "imagens/orbitas3.png" 1753933636 79003 8b96b3ae02f9f48c65bbc30abf5f1b57 ""
   "imagens/orbitas4.png" 1753933756 80758 2f8f2a26b279a5fb26341163d81b9268 ""
